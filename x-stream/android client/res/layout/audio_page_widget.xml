@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/AudioPageWidgetFrameLayout" 
+			 android:layout_width="fill_parent" 
+			 android:layout_height="fill_parent" 
+			 xmlns:android="http://schemas.android.com/apk/res/android" 
+			 android:background="@drawable/black_wood">
+	<include layout="@layout/artist_details_widget"
+		 android:layout_width="fill_parent"
+		 android:layout_height="fill_parent"/>
+	
+     <SlidingDrawer android:id="@+id/AudioPageWidgetDrawer"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" 
+			        android:handle="@+id/AudioPageHandle"
+			        android:content="@+id/AudioPageWidgetListView"
+			        android:orientation="horizontal"
+			        android:topOffset="50dp" 
+			        android:animateOnClick="true">
+			<ImageButton android:id="@+id/AudioPageHandle"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:src="@drawable/handle_left"/>
+			<ListView android:id="@+id/AudioPageWidgetListView" 
+		        	  android:layout_width="fill_parent" 
+		        	  android:layout_height="fill_parent"
+		        	  android:cacheColorHint="#00000000" 
+		        	  android:background="@drawable/brown_slpash">
+		    </ListView>
+	</SlidingDrawer> 
+</FrameLayout>

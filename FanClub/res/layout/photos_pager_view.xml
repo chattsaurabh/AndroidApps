@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pagerViewFL">
+    
+    <ImageView android:id="@+id/pagerImgView"
+        	   android:layout_width="match_parent"
+        	   android:layout_height="match_parent"
+        	   android:background="@drawable/loading_black_1"/>
+    
+    <ProgressBar android:id="@+id/pagerViewProgress"
+        		 android:layout_width="40dp"
+        		 android:layout_height="40dp"
+        		 android:layout_gravity="center"
+        		 android:indeterminate="true"/>
+    <LinearLayout android:id="@+id/pagerViewShareBarContainerLL"
+        		  android:layout_width="match_parent"
+        		  android:layout_height="@dimen/share_bar_ht"
+        		  android:layout_gravity="bottom">
+        		  
+        <include layout="@layout/share_bar"
+            	 android:id="@+id/pagerViewShareBar"/>
+        
+    </LinearLayout>
+
+</FrameLayout>

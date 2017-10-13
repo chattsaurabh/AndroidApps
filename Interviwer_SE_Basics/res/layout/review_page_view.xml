@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/reviewPageTitleRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <!--
+             <ImageView
+            android:id="@+id/reviewPageTitleLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow_40" />
+        -->
+
+        <Button
+            android:id="@+id/reviewPageTitlePrevBtn"
+            android:layout_width="@dimen/test_page_prev_btn_width"
+            android:layout_height="@dimen/test_page_prev_btn_ht"
+            android:layout_alignParentLeft="true"
+            android:text="@string/test_page_prev_ques" />
+
+        <TextView
+            android:id="@+id/reviewPageTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/reviewPageTitleNextBtn"
+            android:layout_width="@dimen/test_page_prev_btn_width"
+            android:layout_height="@dimen/test_page_prev_btn_ht"
+            android:layout_alignParentRight="true"
+            android:text="@string/test_page_next_ques" />
+
+        <!--
+             <ImageView
+            android:id="@+id/reviewPageTitleRtArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow_40" />
+        -->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reviewPageBottomRL"
+        android:layout_below="@+id/reviewPageTitleRL"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/reviewPageQuestionRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/reviewPageQuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/question_text_size" />
+			<TextView
+                android:id="@+id/reviewPageAnswerTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewPageQuestionTextView"
+                android:text="@string/test_page_answer_title"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/answer_title_text_size"
+                android:textStyle="bold" />
+			
+            <LinearLayout
+                android:id="@+id/reviewPageAnsLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewPageAnswerTitleTextView"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/reviewPageBottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/reviewPageHomeButton"
+            android:layout_width="@dimen/home_test_btn_width"
+            android:layout_height="@dimen/home_test_btn_ht"
+            android:layout_centerInParent="true"
+            android:text="@string/review_page_home_btn" />
+
+        <LinearLayout
+            android:id="@+id/reviewPageDotsLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reviewPageHomeButton"
+            android:layout_toRightOf="@+id/reviewPageHomeButton" />
+    </RelativeLayout>
+
+</RelativeLayout>

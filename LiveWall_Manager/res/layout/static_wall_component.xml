@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		     android:layout_width="fill_parent"
+		     android:layout_height="fill_parent"
+		     android:orientation="vertical"
+		     android:paddingBottom="5dp" >
+		     
+    <ImageView
+	        android:id="@+id/StatWallCompImgView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"	        	        
+	        android:scaleType="centerCrop"/>
+    
+    <Button android:id="@+id/StatWallCompButton"
+       		android:layout_width="200dp"
+       		android:layout_height="50dp"
+       		android:layout_gravity="bottom|center_horizontal"
+       		android:text="@string/set_wall"
+       		android:textColor="#FFFFFFFF"
+       		android:background="@drawable/custom_button" />
+    
+
+</FrameLayout>

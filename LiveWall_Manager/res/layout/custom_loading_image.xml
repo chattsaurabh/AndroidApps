@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:orientation="vertical" >
+    	<ViewSwitcher android:id="@+id/LoadingImageViewSwitcher"
+					      android:layout_width="80dp"
+					      android:layout_height="80dp"
+					      android:background="#000000">
+					<ProgressBar android:layout_height="40dp" 
+		    				   	 android:layout_width="40dp"
+		    				   	 android:background="#000000"
+		    				   	 android:id="@+id/LoadingImageProgress"
+		    				   	 android:indeterminate="true"
+		    				   	 android:layout_gravity="center">
+					</ProgressBar>      
+					<ImageView android:layout_height="80dp" 
+    				   android:layout_width="80dp"
+    				   android:background="#000000" 
+    				   android:id="@+id/LoadingImageView">
+    				</ImageView>
+    		</ViewSwitcher> 
+
+</LinearLayout>

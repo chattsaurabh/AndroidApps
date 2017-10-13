@@ -1,0 +1,186 @@
+[
+	{
+		"title":"Syntax",
+		"question":"The study of the sentence construction is known as",
+		"answers":
+			[
+				{
+					 "answer":"semantics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"syntax",
+					 "correct":"true"
+				},
+				{
+					 "answer":"phonetics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"morphology",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"Syntax",
+		"question":"A basic syntactic structure before the application of a transformational rule is known as",
+		"answers":
+			[
+				{
+					 "answer":"Deep structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Surface structure",
+					 "correct":"true"
+				},
+				{
+					 "answer":"IC",
+					 "correct":"false"
+				},
+				{
+					 "answer":"PS rule",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"A syntactic rule which, when applied to the deep structure, derives the surface structure is known as",
+		"answers":
+			[
+				{
+					 "answer":"Transformational Rule",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Surface structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"IC",
+					 "correct":"false"
+				},
+				{
+					 "answer":"PS rule",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"A verb which must be accompanied by an objet is known as",
+		"answers":
+			[
+				{
+					 "answer":"Transitive verb",
+					 "correct":"true"
+				},
+				{
+					 "answer":"intransitive verb",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Deep structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Surface structure",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"A verb which cannot have any object, whose only argument is a subject.",
+		"answers":
+			[
+				{
+					 "answer":"Intransitive verb",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Deep structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Surface structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Transitive verb",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"What is defined as the “study of sentence structure",
+		"answers":
+			[
+				{
+					 "answer":"Morphology",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Syntax",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Semantics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Phonetics",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"The term Phrase structure grammar was originally introduced by",
+		"answers":
+			[
+				{
+					 "answer":"F.D Saussure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Noam Chomsky",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Bloomfield",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Lehman",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Syntax",
+		"question":"D.P hypothesis proposed by",
+		"answers":
+			[
+				{
+					 "answer":"Steven abney",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Bloomfield",
+					 "correct":"false"
+				},
+				{
+					 "answer":"F.D Saussure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Noam Chomsky",
+					 "correct":"false"
+				}
+			]
+	}
+]

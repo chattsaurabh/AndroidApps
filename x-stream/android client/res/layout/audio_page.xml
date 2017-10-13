@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/AudioPageRelativeLayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				xmlns:android="http://schemas.android.com/apk/res/android">
+			<ImageView android:id="@+id/AudioPageHeaderImageView" 
+					   android:layout_width="fill_parent" 
+					   android:background="@drawable/header" 
+					   android:layout_height="150dp">
+		    </ImageView>
+		    <LinearLayout android:id="@+id/AudioPagePlayerLinearLayout" 
+		    			  android:layout_alignParentBottom="true" 
+		    			  android:layout_width="fill_parent" 
+		    			  android:layout_height="wrap_content">
+		    		<include layout="@layout/audio_player"
+		    		 		 android:layout_width="fill_parent"/>
+		    </LinearLayout>
+		    <LinearLayout android:id="@+id/AudioPageListLinearLayout"
+		    			  android:layout_width="fill_parent" 
+		    			  android:layout_height="match_parent" 
+		    			  android:layout_above="@+id/AudioPagePlayerLinearLayout" 
+		    			  android:layout_below="@+id/AudioPageHeaderImageView">
+				    <include layout="@layout/audio_page_widget"
+				    		 android:layout_width="fill_parent"
+				    		 android:layout_height="fill_parent"/>
+		    </LinearLayout>	
+</RelativeLayout>

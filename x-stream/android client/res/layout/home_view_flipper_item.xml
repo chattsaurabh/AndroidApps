@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/HomeFlipperItemFrameLayout" 
+   			 android:layout_width="fill_parent" 
+   			 android:layout_height="fill_parent" 
+   			 xmlns:android="http://schemas.android.com/apk/res/android" 
+   			 android:layout_gravity="center">
+	<ImageView android:id="@+id/HomeViewFlipperItemImageView" 
+			   android:layout_width="fill_parent" 
+			   android:layout_height="fill_parent">
+	</ImageView>
+	<ImageButton android:layout_height="wrap_content"
+				 android:layout_width="wrap_content" 
+				 android:id="@+id/HomeViewFlipperItemImageButton" 
+				 android:background="@drawable/play" 
+				 android:layout_gravity="center">
+	</ImageButton>
+	<ImageButton android:id="@+id/HomeViewFlipperAddChannelsImageButton" 
+				 android:layout_width="wrap_content" 
+				 android:layout_height="wrap_content" 
+				 android:background="@drawable/add" 
+				 android:layout_margin="5dp" android:layout_gravity="bottom|right">
+	</ImageButton>
+</FrameLayout>

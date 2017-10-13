@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/HomeRelativeLayout"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+        		android:background="@drawable/black_wood"
+			    xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<LinearLayout android:id="@+id/HomeHeaderLinLay"
+	    		  android:layout_width="fill_parent"
+	    		  android:layout_height="match_parent"
+	    		  android:layout_alignParentTop="true"
+	    		  android:layout_above="@+id/HomeContentRelLayout">
+		<include layout="@layout/header"
+	    		 android:id="@+id/HomeHeader"/>
+   			    
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/HomeContentRelLayout"
+        		  android:layout_width="fill_parent"        		  
+        		  android:layout_height="wrap_content"
+        		  android:gravity="center_horizontal"
+        		  android:orientation="vertical"
+        		  android:layout_alignParentBottom="true"
+        		  android:paddingBottom="5dp">
+        
+        <Button
+            android:id="@+id/LiveLauncherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center_horizontal"            
+            android:textColor="#FFFFFF"
+            android:text="@string/live_wall_button" />
+        
+        <Button
+            android:id="@+id/GalleryLauncherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center_horizontal"            
+            android:textColor="#FFFFFF"            
+            android:text="@string/gallery_button" />
+        
+    </LinearLayout>
+
+    <include layout="@layout/advertisement_component"
+    		 android:id="@+id/HomeAdv"/>
+</RelativeLayout>

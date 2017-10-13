@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FanWallActivity"    
+	android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true">
+
+    <FrameLayout android:id="@+id/fanwallFrameL"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_above="@+id/fanwallPostTweetLL">
+		<ProgressBar android:id="@+id/fanwallProgressBar"
+		    		 android:layout_width="40dp"
+		    		 android:layout_height="40dp"
+		    		 android:layout_gravity="center"
+		    		 android:indeterminate="true"/>
+		
+		<ExpandableListView android:id="@+id/fanwallExpandableListView"
+		    				android:layout_width="match_parent"
+		    				android:layout_height="match_parent">
+		    				
+		    <requestFocus />
+		    
+		</ExpandableListView>
+	</FrameLayout>
+	<RelativeLayout android:id="@+id/fanwallPostTweetLL"
+	    		  android:layout_width="match_parent"
+	    		  android:layout_height="@dimen/post_tweet_item_ht"
+	    		  android:layout_alignParentBottom="true">
+		
+	    <Button android:id="@+id/fanwallPostTweetBtn"
+	        	android:layout_width="@dimen/post_tweet_btn_dimen"
+	        	android:layout_height="@dimen/post_tweet_btn_dimen"
+	        	android:text="@string/post_tweet_button"
+	        	android:layout_alignParentRight="true"/>
+	        		  
+	    <EditText android:id="@+id/fanwallPostTweetEditText"
+	        	  android:layout_height="match_parent"
+	        	  android:layout_width="match_parent"
+	        	  android:layout_toLeftOf="@+id/fanwallPostTweetBtn"
+	        	   />
+		    
+	    
+	</RelativeLayout>
+</RelativeLayout>

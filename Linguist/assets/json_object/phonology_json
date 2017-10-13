@@ -1,0 +1,278 @@
+[
+	{
+		"title":"Phonology",
+		"question":"The study of how sounds are organized and used in natural languages is called:",
+		"answers":
+			[
+				{
+					 "answer":"Morphology",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Phonology",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Semantics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Syntax",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"Phonology",
+		"question":". The rhythm, stress, and intonation of speech is called:",
+		"answers":
+			[
+				{
+					 "answer":"Complementry distribution",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Prosodic features",
+					 "correct":"true"
+				},
+				{
+					 "answer":"dipthongs",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Allophones",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"The process by which a segment is modified by its neighbours is known as",
+		"answers":
+			[
+				{
+					 "answer":"Semantics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Complementry distribution",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Assimilation",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Connotation",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"The suprasegmental features of specch is known as ",
+		"answers":
+			[
+				{
+					 "answer":"Prosody",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Assimilation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Accent",
+					 "correct":"false"
+				},
+				{
+					 "answer":"pitch",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"A property of syllable by which they are made more noticeable is known as",
+		"answers":
+			[
+				{
+					 "answer":"pitch",
+					 "correct":"false"
+				},
+				{
+					 "answer":"accent",
+					 "correct":"false"
+				},
+				{
+					 "answer":"allophones",
+					 "correct":"false"
+				},
+				{
+					 "answer":"stress",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"What is Pidgin",
+		"answers":
+			[
+				{
+					 "answer":"Language Group",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Chinese character",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Trade language used by those group of people who do not have a common language",
+					 "correct":"true"
+				},
+				{
+					 "answer":"None of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"The set of speech sounds which is actually realised through these    - Phono speech sounds is",
+		"answers":
+			[
+				{
+					 "answer":"Phone",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Allophone",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Phoneme",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Morph",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"communicative competence means ",
+		"answers":
+			[
+				{
+					 "answer":"The native speaker’s knowledge of his language",
+					 "correct":"true"
+				},
+				{
+					 "answer":"The appropriate use of language in appropriate situation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"The utilization of speaker’s competence for better a communicative act",
+					 "correct":"false"
+				},
+				{
+					 "answer":"None of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"Metaphorical code-switching occurs when",
+		"answers":
+			[
+				{
+					 "answer":"The subject of discussion is literature",
+					 "correct":"false"
+				},
+				{
+					 "answer":"There is a change in situation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"The speaker wants to pass on a secret message",
+					 "correct":"true"
+				},
+				{
+					 "answer":"there is a change of topic",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"Which   phoneme is an approximant",
+		"answers":
+			[
+				{
+					 "answer":"[r]",
+					 "correct":"true"
+				},
+				{
+					 "answer":"[o]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[j]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[p]",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"Which is a set of minimal pairs",
+		"answers":
+			[
+				{
+					 "answer":"there/their",
+					 "correct":"false"
+				},
+				{
+					 "answer":"bat/bit",
+					 "correct":"true"
+				},
+				{
+					 "answer":"stuck/struck",
+					 "correct":"false"
+				},
+				{
+					 "answer":"None of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonology",
+		"question":"In German stops in syllable final position are devoiced. This is an example of",
+		"answers":
+			[
+				{
+					 "answer":"Neutralization",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Assimilation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"dissimilation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"None of these",
+					 "correct":"false"
+				}
+			]
+	}	
+]

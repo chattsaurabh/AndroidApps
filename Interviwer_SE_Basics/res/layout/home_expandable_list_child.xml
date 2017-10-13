@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/expandable_list_child_item_ht"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/expandableListChildScrolView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/expandable_list_child_item_ht" >
+
+        <TextView
+            android:id="@+id/expandableListChildTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AAAAAA"
+            android:textColor="#000000"
+            android:textSize="@dimen/introduction_desc_text_size" />
+    </ScrollView>
+
+</LinearLayout>

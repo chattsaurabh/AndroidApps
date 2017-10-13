@@ -1,0 +1,324 @@
+[
+	{
+		"title":"Phonetics",
+		"question":"What is the Place of articulation for the sound /p/,/b/",
+		"answers":
+			[
+				{
+					 "answer":"Lips",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Glottal",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Alveolar",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Velar",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"Phonetics",
+		"question":"What is the Manner of articulation for the sound /t/,/d/",
+		"answers":
+			[
+				{
+					 "answer":"Fricative",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Stop",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Affricate",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Nasal",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"What is the branch of linguistics that studies human soundmaking, transmission, and reception?",
+		"answers":
+			[
+				{
+					 "answer":"Morphology",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Phonology",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Phonetics",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Syntax",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"Which of the stricture involved in the articulation of Complete Closure",
+		"answers":
+			[
+				{
+					 "answer":"Affricate",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Nasal",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Stop",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Lateral",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"A distinctive phonetic feature of phonemes (consonants) whose place of articulation is in the front of the palato-alveolar region.",
+		"answers":
+			[
+				{
+					 "answer":"Nasal sound",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Anterior",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Apocope",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Argot",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"The IPA symbol [k] is",
+		"answers":
+			[
+				{
+					 "answer":"Voiceless velar nasal",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Voiceless velar plosive",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Voiced fricative nasal",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"A noun or noun phrase to which a pronoun refers is known as",
+		"answers":
+			[
+				{
+					 "answer":"Antecedent",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Anterior",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Apocope",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Argot",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"The IPA Symbol [f] represents",
+		"answers":
+			[
+				{
+					 "answer":"voiced ovular fricative",
+					 "correct":"false"
+				},
+				{
+					 "answer":"voiceless labiodentals fricative",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Voiced labiodentals fricative",
+					 "correct":"false"
+				},
+				{
+					 "answer":"voiced bilabial fricative",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"Palatalization is a",
+		"answers":
+			[
+				{
+					 "answer":"Voicing process",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Articulatory process",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Air-Stream process",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":". Which is a correct transcription of ‘chaplain’",
+		"answers":
+			[
+				{
+					 "answer":"[chapln",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[capln]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[cæpln]",
+					 "correct":"true"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"The study of phoneme production is called",
+		"answers":
+			[
+				{
+					 "answer":"ariculatory Phonetics",
+					 "correct":"true"
+				},
+				{
+					 "answer":"auditory phonetics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"acoustic phonetics",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"Which   phoneme is front, mid, and lax",
+		"answers":
+			[
+				{
+					 "answer":"[u]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[E]",
+					 "correct":"true"
+				},
+				{
+					 "answer":"[I]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"Which   phoneme is NOT a continuant",
+		"answers":
+			[
+				{
+					 "answer":"[c]",
+					 "correct":"true"
+				},
+				{
+					 "answer":"[l]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"[v]",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Phonetics",
+		"question":"Which phonetic feature best describes this set of phonemes? [t], [l], [s]",
+		"answers":
+			[
+				{
+					 "answer":"coronal",
+					 "correct":"true"
+				},
+				{
+					 "answer":"plossive",
+					 "correct":"false"
+				},
+				{
+					 "answer":"anterior",
+					 "correct":"false"
+				},
+				{
+					 "answer":"none of these",
+					 "correct":"false"
+				}
+			]
+	}
+]

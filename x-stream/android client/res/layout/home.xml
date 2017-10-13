@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/HomeRelativeLayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				xmlns:android="http://schemas.android.com/apk/res/android">				
+			<FrameLayout android:id="@+id/HomeHeaderFrameLayout" 
+						 android:layout_width="fill_parent" 
+						 android:layout_height="150dp">	
+				<ImageView android:id="@+id/HomeHeaderImageView" 
+						   android:layout_width="fill_parent" 
+						   android:background="@drawable/header" 
+						   android:layout_height="fill_parent">	
+			    </ImageView>			
+				<ImageView  android:id="@+id/search"
+					    	android:layout_width="wrap_content"
+					    	android:layout_height="wrap_content"
+					    	android:src="@drawable/search4"
+					    	android:padding="5dip" 
+					    	android:layout_gravity="top|right"/>
+		    </FrameLayout>
+		    <LinearLayout android:id="@+id/HomeButtonsLinearLayout" 
+						  android:layout_below="@+id/HomeHeaderFrameLayout" 
+						  android:layout_height="wrap_content" 
+						  android:orientation="horizontal" 
+						  android:layout_width="wrap_content" 
+						  android:layout_gravity="center_vertical|left" 
+						  android:layout_marginTop="10dp" 
+						  android:layout_marginBottom="10dp">						  
+   						<Button android:id="@+id/AudioStreamButton"
+   								android:layout_width="160dp"
+   								android:layout_height="wrap_content"
+   								android:text="Audio Stream" 
+   								android:background="@drawable/custom_button">
+						</Button>
+						<Button android:id="@+id/VideoStreamButton"
+   								android:layout_width="160dp"
+   								android:layout_height="wrap_content"
+   								android:text="Video Stream" 
+   								android:background="@drawable/custom_button">
+						</Button>	  
+		    </LinearLayout>
+			<ViewFlipper android:id="@+id/HomeViewFlipper" 
+		    			 android:layout_width="fill_parent" 
+		    			 android:layout_below="@+id/HomeButtonsLinearLayout" 
+		    			 android:layout_height="wrap_content">
+		    			  <include layout="@layout/home_view_flipper_item"
+					        	  android:id="@+id/ListItem1" />
+			        	  <include layout="@layout/home_view_flipper_item"
+					        	  android:id="@+id/ListItem2" />
+					      <include layout="@layout/home_view_flipper_item"
+					        	  android:id="@+id/ListItem3" />
+					      <include layout="@layout/home_view_flipper_item"
+					        	  android:id="@+id/ListItem4" />
+					  	  <include layout="@layout/home_view_flipper_item"
+					        	  android:id="@+id/ListItem5" />      	  
+	         </ViewFlipper>			  
+ </RelativeLayout>

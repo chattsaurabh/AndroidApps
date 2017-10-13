@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/VideoPageWidgetFrameLayout" 
+			 android:layout_width="fill_parent" 
+			 android:layout_height="fill_parent" 
+			 xmlns:android="http://schemas.android.com/apk/res/android" 
+			 android:background="@drawable/black_wood">
+     <RelativeLayout android:id="@+id/VideoPageWidgetFilmStripRelativeLayout" 
+     				 android:layout_width="wrap_content" 
+     				 android:layout_height="wrap_content" 
+     				 android:paddingTop="5dp" 
+     				 android:paddingRight="5dp" 
+     				 android:paddingLeft="5dp">     	
+   		<Gallery android:id="@+id/VideoPageWidgetFilmStripGallery" 
+   				 android:layout_width="fill_parent" 
+   				 android:layout_height="wrap_content"
+   				 android:layout_alignParentBottom="true" 
+   				 android:paddingLeft="20dp" android:paddingRight="20dp">     			
+   		</Gallery>
+   		<LinearLayout android:id="@+id/VideoPageWidgetFilmStripImageLinearLayout" 
+   					  android:layout_width="fill_parent" 
+   					  android:layout_height="match_parent"
+   					  android:layout_above="@+id/VideoPageWidgetFilmStripGallery">
+   				<include layout="@layout/home_view_flipper_item"
+			        	 android:id="@+id/VideoPageWidgetFilmStripImage" />
+   		</LinearLayout>   		
+     </RelativeLayout>
+     <SlidingDrawer android:id="@+id/VideoPageWidgetDrawer"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" 
+			        android:handle="@+id/VideoPageHandle"
+			        android:content="@+id/VideoPageWidgetListView"
+			        android:orientation="horizontal"
+			        android:topOffset="50dp" 
+			        android:animateOnClick="true">
+			<ImageButton android:id="@+id/VideoPageHandle"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:src="@drawable/handle_left"/>        
+			<ListView android:id="@+id/VideoPageWidgetListView" 
+		        	  android:layout_width="fill_parent" 
+		        	  android:layout_height="wrap_content"
+		        	  android:cacheColorHint="#00000000" 
+		        	  android:background="@drawable/brown_slpash">
+		    </ListView>
+	</SlidingDrawer>
+    
+</FrameLayout>
+

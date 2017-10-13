@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fan Club</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- layout resources titles -->
+
+    <string name="home_video_button">Videos</string>
+    <string name="home_gossip_button">Gossip</string>
+    <string name="home_photos_button">Photos</string>
+    <string name="home_news_button">News</string>
+    <string name="home_fan_club_button">Fan Club</string>
+    <string name="home_profile_button">My Profile</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_photos">PhotosActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_photos_pager_view">PhotosPagerViewActivity</string>
+    <string name="title_activity_custom_web_view">CustomWebViewActivity</string>
+
+    <!-- String constants -->
+    <string name="ok_button">OK</string>
+    <string name="title_activity_fan_wall">FanWallActivity</string>
+    <string name="post_tweet_button">Post</string>
+    <string name="cancel_tweet_button">Cancel</string>
+    <string name="post_tweet_title">Add comments</string>
+    
+    <string name="twitter_post_success">Posted !!</string>
+    <string name="twitter_post_failed">Action Failed !!</string>
+    <string name="twitter_auth_failed">Authentication Failed !!</string>
+    
+    <string name="image_saved">Image saved !</string>
+    <string name="image_save_failed">Unable to save image!</string>
+
+</resources>

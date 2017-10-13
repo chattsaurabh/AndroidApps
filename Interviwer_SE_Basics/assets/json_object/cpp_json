@@ -1,0 +1,355 @@
+[
+	{
+		"title":"C++",
+		"question":"Which allows you to create a derived class that inherits properties from more than one base class?",
+		"answers":
+			[
+				{
+					 "answer":"Multilevel inheritance",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Multiple inheritance",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Hybrid Inheritance",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Hierarchical Inheritance",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"C++",
+		"question":"Which feature in OOP allows reusing code?",
+		"answers":
+			[
+				{
+					 "answer":"Polymorphism",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Inheritance",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Encapsulation",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Data hiding",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"A function that changes the state of the cout object is called a(n)",
+		"answers":
+			[
+				{
+					 "answer":"member",
+					 "correct":"false"
+				},
+				{
+					 "answer":"adjuster",
+					 "correct":"false"
+				},
+				{
+					 "answer":"manipulator",
+					 "correct":"true"
+				},
+				{
+					 "answer":"operator",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"What does C++ append to the end of a string literal constant?",
+		"answers":
+			[
+				{
+					 "answer":"a space",
+					 "correct":"false"
+				},
+				{
+					 "answer":"a number sign (#)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"an asterisk (*)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"a null character",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"An array element is accessed using",
+		"answers":
+			[
+				{
+					 "answer":"a first-in-first-out approach",
+					 "correct":"false"
+				},
+				{
+					 "answer":"the dot operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"a member name",
+					 "correct":"false"
+				},
+				{
+					 "answer":"an index number",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"To hide a data member from the program, you must declare the data member in the _____ section of the class",
+		"answers":
+			[
+				{
+					 "answer":"concealed",
+					 "correct":"false"
+				},
+				{
+					 "answer":"confidential",
+					 "correct":"false"
+				},
+				{
+					 "answer":"hidden",
+					 "correct":"false"
+				},
+				{
+					 "answer":"private",
+					 "correct":"true"
+				},
+				{
+					 "answer":"restricted",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"External documentation includes",
+		"answers":
+			[
+				{
+					 "answer":"a printout of the program's code",
+					 "correct":"true"
+				},
+				{
+					 "answer":"flowcharts",
+					 "correct":"false"
+				},
+				{
+					 "answer":"IPO charts",
+					 "correct":"false"
+				},
+				{
+					 "answer":"pseudo code",
+					 "correct":"false"
+				},
+				{
+					 "answer":"All of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"The function whose prototype is void getData(Item *thing); receives",
+		"answers":
+			[
+				{
+					 "answer":"a pointer to a structure",
+					 "correct":"true"
+				},
+				{
+					 "answer":"a reference to a structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"a copy of a structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"nothing",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"Null character needs a space of",
+		"answers":
+			[
+				{
+					 "answer":"zero bytes",
+					 "correct":"false"
+				},
+				{
+					 "answer":"one byte",
+					 "correct":"true"
+				},
+				{
+					 "answer":"three bytes",
+					 "correct":"false"
+				},
+				{
+					 "answer":"four bytes",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"The number of structures than can be declared in a single statement is",
+		"answers":
+			[
+				{
+					 "answer":"one",
+					 "correct":"false"
+				},
+				{
+					 "answer":"two",
+					 "correct":"false"
+				},
+				{
+					 "answer":"three",
+					 "correct":"false"
+				},
+				{
+					 "answer":"unlimited",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"Which of the following formulas can be used to generate random integers between 1 and 10?",
+		"answers":
+			[
+				{
+					 "answer":"1 + rand() % (10 - 1 + 1)",
+					 "correct":"true"
+				},
+				{
+					 "answer":"1 + (10 - 1 + 1) % rand()",
+					 "correct":"false"
+				},
+				{
+					 "answer":"10 + rand() % (10 - 1 + 1)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"10 + rand() % (10 + 1)",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"Format flags may be combined using the _____",
+		"answers":
+			[
+				{
+					 "answer":"bitwise OR operator (|)",
+					 "correct":"true"
+				},
+				{
+					 "answer":"logical OR operator (||)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"bitwise AND operator (&)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"logical AND operator (&&)",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"Which of the following will store the number 320000 as a Float number?",
+		"answers":
+			[
+				{
+					 "answer":"counPop = (float) 3.2e5;",
+					 "correct":"true"
+				},
+				{
+					 "answer":"counPop = (float) 3.2e6;",
+					 "correct":"false"
+				},
+				{
+					 "answer":"counPop = (float) .32e5;",
+					 "correct":"false"
+				},
+				{
+					 "answer":"counPop = (float) .32e7;",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"The arguments that determine the state of the cout object are called",
+		"answers":
+			[
+				{
+					 "answer":"classes",
+					 "correct":"false"
+				},
+				{
+					 "answer":"manipulators",
+					 "correct":"false"
+				},
+				{
+					 "answer":"format flags or state flags",
+					 "correct":"true"
+				},
+				{
+					 "answer":"state controllers",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C++",
+		"question":"The following statement where T is true and F is false T&&T||F&&T",
+		"answers":
+			[
+				{
+					 "answer":"is true",
+					 "correct":"true"
+				},
+				{
+					 "answer":"is false",
+					 "correct":"false"
+				},
+				{
+					 "answer":"is wrong",
+					 "correct":"false"
+				},
+				{
+					 "answer":"not applicable in C language",
+					 "correct":"false"
+				}
+			]
+	}	
+]

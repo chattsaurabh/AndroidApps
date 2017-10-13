@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/HeaderRelativeLayout"	         
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            xmlns:android="http://schemas.android.com/apk/res/android">
+	         
+        	<ViewFlipper android:id="@+id/HeaderViewFlipper" 
+		    			 android:layout_width="fill_parent"
+		    			 android:layout_height="fill_parent">
+		    			  <ImageView android:id="@+id/HeaderViewFlipperItemImageView1" 
+							         android:layout_width="fill_parent" 
+								     android:layout_height="fill_parent"
+								     android:scaleType="centerCrop"
+								     android:background="@drawable/default_home_content_bg">
+						  </ImageView>
+						  <ImageView android:id="@+id/HeaderViewFlipperItemImageView2" 
+							         android:layout_width="fill_parent" 
+								     android:layout_height="fill_parent"
+								     android:scaleType="centerCrop"
+								     android:background="@drawable/default_home_content_bg">
+						  </ImageView>
+						  <ImageView android:id="@+id/HeaderViewFlipperItemImageView3" 
+							         android:layout_width="fill_parent" 
+								     android:layout_height="fill_parent"
+								     android:scaleType="centerCrop"
+								     android:background="@drawable/default_home_content_bg">
+						  </ImageView>      	  
+        	</ViewFlipper>
+	                 
+</RelativeLayout>
+

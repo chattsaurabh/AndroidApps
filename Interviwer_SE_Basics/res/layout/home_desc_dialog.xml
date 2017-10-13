@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/homeDescTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/homeDescScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeDescOKBtn"
+        android:layout_below="@+id/homeDescTitleTextView" >
+
+        <RelativeLayout
+            android:id="@+id/homeDescRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/homeDescTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#FFFFFF" />
+
+            <WebView
+                android:id="@+id/homeDescImageWebView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/introduction_desc_image_ht"
+                android:layout_below="@+id/homeDescTV" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/homeDescOKBtn"
+        android:layout_width="@dimen/home_test_btn_width"
+        android:layout_height="@dimen/home_test_btn_ht"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_desc_dialog_ok" />
+
+</RelativeLayout>

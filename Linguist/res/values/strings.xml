@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Linguist</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home_take_test_btn">Take the test</string>
+    <string name="home_title">Introduction</string>
+    <string name="test_launcher_title">Linguist</string>
+
+    <string name="home_desc_dialog_ok">Ok</string>
+    
+    <string name="title_activity_test_launcher">TestLauncherActivity</string>
+    <string name="test_launcher_all_tests">All</string>
+    
+    <string name="title_activity_test">TestActivity</string>
+    <string name="test_page_ques_format">Question # </string>
+    <string name="test_page_answer_title">Answers - </string>
+    <string name="test_page_submit">Submit</string>
+    <string name="test_page_next_ques">Next</string>
+    <string name="test_page_prev_ques">Prev</string>
+    
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="result_title">Result</string>
+    <string name="result_review_btn_text">Review your answers</string>
+    <string name="result_subject_title">Subject</string>
+    <string name="result_marks_title">Score</string>
+    
+    <string name="title_activity_review">ReviewActivity</string>
+    <string name="review_page_home_btn">Home</string>
+
+</resources>

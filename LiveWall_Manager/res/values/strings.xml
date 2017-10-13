@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">All-in-1 Wall Manager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading">Loading...</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="wallpaper_name">Live Wallpaper</string>
+    <string name="wallpaper_desc">This is a Live Wallpaper</string>
+
+    <!-- following are the titles for the buttons -->
+    <string name="live_wall_button">Live Wallpapers</string>
+    <string name="gallery_button">Gallery</string>
+    <string name="set_wall">Set as Wallpaper</string>
+    <string name="crop_wall_image">Crop</string>
+
+    <!-- content description -->
+    <string name="header_image">Header Image</string>
+    <string name="crop_image_view">Crop Image</string>
+    <string name="confirm_wallpaper_title">Set as wallpaper ?</string>
+    <string name="confirm_wallpaper_desc">Do you really want to set the selection as your wallpaper. Press OK to confirm or press CANCEL to abort.</string>
+	<string name="op_succesful">Picture set as your wallpaper successfully</string>
+	<string name="op_failed">Operation failed</string>
+	<string name="faulty_selection">Selection is a faulty image</string>
+	<string name="no_images">There are no photos in gallery</string>
+	<string name="confirm_discard_cropped_title">Discard cropped image ?</string>
+    <string name="confirm_discard_cropped_desc">Do you really want to discard the cropped image. Press OK to confirm or press CANCEL to abort.</string>
+	
+	
+<!-- tools array -->
+
+	<string-array name="tools_array">
+        <item>Crop image from gallery</item>             
+        <item>Crop image</item>
+    </string-array>
+	
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/expandable_list_grp_item_ht"
+    android:orientation="horizontal"
+    android:id="@+id/expandableListItemContainerLL"
+    android:padding="10dp" >
+    
+	
+	<TextView android:id="@+id/expandableListGroupTextView"
+	    	  android:layout_width="match_parent"
+	    	  android:layout_height="@dimen/expandable_list_grp_item_ht"
+	    	  android:ellipsize="end"
+	    	  android:textColor="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/testPageTitleRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <!--
+             <ImageView
+            android:id="@+id/testPageTitleLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow_40" />
+        -->
+
+        <Button
+            android:id="@+id/testPageTitlePrevBtn"
+            android:layout_width="@dimen/test_page_prev_btn_width"
+            android:layout_height="@dimen/test_page_prev_btn_ht"
+            android:layout_alignParentLeft="true"
+            android:text="@string/test_page_prev_ques" />
+
+        <TextView
+            android:id="@+id/testPageTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/testPageTitleNextBtn"
+            android:layout_width="@dimen/test_page_prev_btn_width"
+            android:layout_height="@dimen/test_page_prev_btn_ht"
+            android:layout_alignParentRight="true"
+            android:text="@string/test_page_next_ques" />
+
+        <!--
+             <ImageView
+            android:id="@+id/testPageTitleRtArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow_40" />
+        -->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/testPageQuestionScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/testPageBottomRL"
+        android:layout_below="@+id/testPageTitleRL"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/testPageScrollRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/testPageQuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/question_text_size" />
+
+            <TextView
+                android:id="@+id/testPageAnswerTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testPageQuestionTextView"
+                android:text="@string/test_page_answer_title"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/answer_title_text_size"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/testPageRadioGrpTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testPageAnswerTitleTextView"
+                android:orientation="vertical" >
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/testPageBottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/testPageSubmitButton"
+            android:layout_width="@dimen/home_test_btn_width"
+            android:layout_height="@dimen/home_test_btn_ht"
+            android:layout_centerInParent="true"
+            android:enabled="false"
+            android:text="@string/test_page_submit" />
+
+        <LinearLayout
+            android:id="@+id/testPageDotsLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/testPageSubmitButton"
+            android:layout_alignBaseline="@+id/testPageSubmitButton"/>
+    </RelativeLayout>
+
+</RelativeLayout>

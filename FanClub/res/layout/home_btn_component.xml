@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="70dp">
+
+    <ImageButton
+        android:id="@+id/homeComponentBtn"
+        android:layout_width="@dimen/home_btn_dimen"
+        android:layout_height="@dimen/home_btn_dimen"
+        android:background="@drawable/custom_button" />
+
+
+	<TextView android:id="@+id/homeComponentTitle"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:gravity="center"/>
+</LinearLayout>

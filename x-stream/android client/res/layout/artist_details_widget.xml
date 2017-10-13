@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+    <LinearLayout android:layout_height="wrap_content" 
+    			  android:layout_width="fill_parent" 
+    			  android:id="@+id/ArtistDetailsThumbnailLinearLayout" 
+    			  android:orientation="horizontal">
+    		<ViewSwitcher android:id="@+id/ArtistDetailsThumbnailViewSwitcher"
+					      android:layout_width="120dp"
+					      android:layout_height="120dp"
+					      android:background="#000000">
+					<ProgressBar android:layout_height="40dp" 
+		    				   	 android:layout_width="40dp"
+		    				   	 android:background="#000000"
+		    				   	 android:id="@+id/ArtistDetailsThumbnailProgress"
+		    				   	 android:indeterminate="true"
+		    				   	 android:layout_gravity="center">
+					</ProgressBar>      
+					<ImageView android:layout_height="120dp" 
+    				   android:layout_width="120dp"
+    				   android:background="#000000" 
+    				   android:id="@+id/ArtistDetailsThumbnailImageView">
+    				</ImageView>
+    		</ViewSwitcher> 
+        	
+        	<TextView android:text="Britney Spears" 
+    				  android:id="@+id/ArtistDetailsThumbnailTextView" 
+    				  android:layout_width="wrap_content" 
+    				  android:layout_height="wrap_content" 
+    				  android:textSize="20dp">
+    		</TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="match_parent" 
+    			  android:layout_width="fill_parent" 
+    			  android:id="@+id/ArtistDetailsAboutLinearLayout"
+    			  android:orientation="vertical">
+    		<TextView android:text="Circus is the title track of birtney's latest album Circus. This song features a blend of pop and jazz." 
+    				  android:id="@+id/ArtistDetailsAboutTextView" 
+    				  android:layout_width="wrap_content" 
+    				  android:layout_height="wrap_content" 
+    				  android:textSize="15dp" android:paddingRight="50dp">
+    		</TextView>
+    </LinearLayout>
+</LinearLayout>

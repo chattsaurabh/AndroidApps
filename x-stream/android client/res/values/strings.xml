@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, SplashScreen!</string>
+	<string name="app_name">X-STREAM</string>
+	<string name="settings">Settings</string>
+	<string name="help">Help</string>
+	<string name="about">About</string>
+	<string name="exit">Exit</string>
+	<string name="search_label">Exit</string>
+	<string name="search_hint">Exit</string>
+	<string name="search">Search</string>
+	<string name="about_text">X-STREAM is a Audio/Video streaming player
+		application. It supports ANDROID 2.2 version and versions higher than
+		that. It provides the user an access to a large collection of Audio
+		and Video media that are streamed in online (via GPRS/WIFI).
+	</string>
+	<string name="help_text">X-STREAM provides user access to both Audio and
+		Video streaming media. \n\n
+
+		**AUDIO STREAM** \n\n
+
+		To access Audio the
+		user can navigate to the
+		Audio page (Home/Audio
+		Stream). The channels
+		are listed on the right
+		hand margin. The list can
+		be dragged in/out.
+		Click on the channels
+		listed to change the channel.
+		User can create his
+		own channels and add his favorite songs to it by
+		clicking on the "+"
+		button present beside the progress bar at the
+		right bottom of the
+		screen. \n\n
+
+		**VIDEO STREAM**\n\n
+
+		To access Video the user
+		can navigate
+		to
+		the Video page (Home/Video
+		Stream). The channels are listed on the
+		right
+		hand margin. The list can
+		be dragged in/out. Click on the
+		channels
+		listed to change the channel.
+		In the Video page the list
+		present at the
+		bottom of the screen can be
+		swiped to view the
+		next/previous item. To
+		play a Video click on the
+		PLAY button of the
+		current Video item present
+		at the center of the
+		screen.User can create his own channels and add
+		his favorite songs to it by
+		clicking on the "+" button present at the
+		right bottom of the current Video item.\n\n
+
+		**MULTIPLE STREAMS FROM
+		HOME SCREEN**\n\n
+
+		The home
+		screen
+		provides a list
+		of
+		auto panning
+		Audio/Video categories. To
+		access
+		the
+		displayed media,
+		press the PLAY
+		button present on the media
+		item.
+		The
+		auto panning
+		range
+		of categories on
+		the home screen can be
+		swiped
+		in/out to view
+		the
+		next/previous media
+		items. </string>
+	<string name="settings_text">Coming soon...</string>
+	<string-array name="countries_array">
+		<item>Bahrain</item>
+		<item>Bangladesh</item>
+		<item>Barbados</item>
+		<item>Belarus</item>
+		<item>Belgium</item>
+		<item>Belize</item>
+		<item>Benin</item>
+	</string-array>
+</resources>

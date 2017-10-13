@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="test_activity_bottom_margin">5dp</dimen>
+    
+    <dimen name="introduction_desc_text_size">20sp</dimen>
+    <dimen name="introduction_desc_image_ht">160dp</dimen>
+    <dimen name="expandable_list_grp_item_ht">60dp</dimen>
+    <dimen name="expandable_list_child_item_ht">250dp</dimen>
+	<dimen name="expandable_list_item_width">120dp</dimen>
+	
+	<dimen name="home_test_btn_ht">80dp</dimen>
+	<dimen name="home_test_btn_width">200dp</dimen>
+	
+	<dimen name="test_page_radio_btn_ht">60dp</dimen>
+	<dimen name="test_page_submit_btn_ht">60dp</dimen>
+	<dimen name="test_page_prev_btn_ht">45dp</dimen>
+	<dimen name="test_page_prev_btn_width">65dp</dimen>
+	
+	<dimen name="result_row_subject_width">200dp</dimen>
+	<dimen name="result_row_subject_ht">40dp</dimen>
+	<dimen name="result_row_marks_width">80dp</dimen>
+	<dimen name="result_row_marks_ht">40dp</dimen>
+	
+	<dimen name="question_text_size">17sp</dimen>
+	<dimen name="answer_title_text_size">20sp</dimen>
+	<dimen name="answer_text_size">14sp</dimen>
+	
+	<!-- <dimen name="result_score_text_size">18sp</dimen> -->
+	<dimen name="review_ans_text_size">20sp</dimen>
+	
+	<dimen name="ad_ht">20dp</dimen>
+
+</resources>

@@ -1,0 +1,272 @@
+{
+	"home" : 
+	[
+		{
+			"title" : "song1",
+			"thumbnail" : "http://cdn.mblrd.com/i/80-120/s/aHR0cDovL2R2MS5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdmRYQnNiMkZrY3k4NFpDODRaR1EyWVRZME0yRTRPV1JpTUdWbU0yRmtNemhsWkdNM1pqTTVPR05pTXcsLA,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache5.c.youtube.com/CiILENy73wIaGQn8kJAgSopnnBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNTBiZmM4YjdhNTJjNjljYmQ5ZGZiODY5NDNjNDllNWEuanBn",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v3.cache4.c.youtube.com/CiILENy73wIaGQnRmFFsFkRH4RMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdk1TOTFjR3h2WVdSekwyUXdMMlF3TmpZNVltSmpORGhoTXpZd016UTJabUl3TjJJMVpqVTJZekptTmpSag,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		}	
+	],
+	"audio" : 
+	[
+		{
+			"title" : "song1",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNzMwNWUyNDM4ZTAwYTA3NmU0Njk2MDJlOWQ0NTg2NmQucG5n",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdk1TOTFjR3h2WVdSekwyUXdMMlF3TmpZNVltSmpORGhoTXpZd016UTJabUl3TjJJMVpqVTJZekptTmpSag,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNTBiZmM4YjdhNTJjNjljYmQ5ZGZiODY5NDNjNDllNWEuanBn",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "http://cdn.mblrd.com/i/80-120/s/aHR0cDovL2R2MS5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdmRYQnNiMkZrY3k4NFpDODRaR1EyWVRZME0yRTRPV1JpTUdWbU0yRmtNemhsWkdNM1pqTTVPR05pTXcsLA,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNzMwNWUyNDM4ZTAwYTA3NmU0Njk2MDJlOWQ0NTg2NmQucG5n",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdk1TOTFjR3h2WVdSekwyUXdMMlF3TmpZNVltSmpORGhoTXpZd016UTJabUl3TjJJMVpqVTJZekptTmpSag,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",				
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNTBiZmM4YjdhNTJjNjljYmQ5ZGZiODY5NDNjNDllNWEuanBn",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "http://cdn.mblrd.com/i/80-120/s/aHR0cDovL2R2MS5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdmRYQnNiMkZrY3k4NFpDODRaR1EyWVRZME0yRTRPV1JpTUdWbU0yRmtNemhsWkdNM1pqTTVPR05pTXcsLA,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",				
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNzMwNWUyNDM4ZTAwYTA3NmU0Njk2MDJlOWQ0NTg2NmQucG5n",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdk1TOTFjR3h2WVdSekwyUXdMMlF3TmpZNVltSmpORGhoTXpZd016UTJabUl3TjJJMVpqVTJZekptTmpSag,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "http://cdn.mblrd.com/i/168-168/c/aHR0cDovL2Nkbi50aGV0YXlsb3JuYXRpb24uY29tL3RheWxvcm5hdGlvbi9jb250ZW50ZmlsZXMvcGhvdG8vNTBiZmM4YjdhNTJjNjljYmQ5ZGZiODY5NDNjNDllNWEuanBn",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Britney_Spears_Circus.mp3",				
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "http://cdn.mblrd.com/i/80-120/s/aHR0cDovL2R2MS5tYmxyZC5jb20vaS80ODAtNDgwL3MvYUhSMGNEb3ZMMjF2WW1sc1pYSnZZV1JwWlM1amIyMHZabWxzWlhNdmRYQnNiMkZrY3k4NFpDODRaR1EyWVRZME0yRTRPV1JpTUdWbU0yRmtNemhsWkdNM1pqTTVPR05pTXcsLA,,",
+			"desc" : "song description",
+			"media_url" : "http://ankara.telesoftas.net/~mindbl/smart/Kanye_West_Feat_T_Pain_Heartless.mp3",				
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"audio"
+		}
+	],
+	"video" : 
+	[
+		{
+			"title" : "song1",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache5.c.youtube.com/CiILENy73wIaGQn8kJAgSopnnBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v3.cache4.c.youtube.com/CiILENy73wIaGQnRmFFsFkRH4RMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache7.c.youtube.com/CiILENy73wIaGQk61L57Cq2OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist1",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v8.cache8.c.youtube.com/CiILENy73wIaGQmQ_Nk_RkN4LxMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache5.c.youtube.com/CiILENy73wIaGQn8kJAgSopnnBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v3.cache4.c.youtube.com/CiILENy73wIaGQnRmFFsFkRH4RMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist2",	
+			"channel" : "channel1",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache7.c.youtube.com/CiILENy73wIaGQk61L57Cq2OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v8.cache8.c.youtube.com/CiILENy73wIaGQmQ_Nk_RkN4LxMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v2.cache4.c.youtube.com/CiILENy73wIaGQnWPkT54AaKqBMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist1",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song1",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache5.c.youtube.com/CiILENy73wIaGQn8kJAgSopnnBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song2",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v3.cache4.c.youtube.com/CiILENy73wIaGQnRmFFsFkRH4RMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		},
+		{
+			"title" : "song3",
+			"thumbnail" : "thumbnail_url",
+			"desc" : "song description",
+			"media_url" : "rtsp://v1.cache7.c.youtube.com/CiILENy73wIaGQk61L57Cq2OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp",				
+			"artist" : "artist2",	
+			"channel" : "channel2",
+			"type"	:	"video"
+		}
+	]
+}

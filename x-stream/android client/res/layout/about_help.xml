@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:background="@drawable/black_wood">
+  	<ScrollView android:id="@+id/AboutHelpScrollView"  
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent">
+		    <TextView android:layout_width="fill_parent" 
+		    		  android:id="@+id/AboutHelpTextView"  
+		    		  android:layout_height="fill_parent" 
+		    		  android:padding="40dp" android:gravity="center"></TextView>
+ 	</ScrollView>
+</LinearLayout>

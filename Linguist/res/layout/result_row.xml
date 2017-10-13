@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <TextView android:id="@+id/resultRowSubject"
+        	  android:layout_width="@dimen/result_row_subject_width"
+        	  android:layout_height="@dimen/result_row_subject_ht"
+        	  android:textColor="#FFFFFF"
+        	  android:gravity="center"
+        	  android:background="@drawable/result_cell"/>
+    <TextView android:id="@+id/resultRowMarks"
+        	  android:layout_width="@dimen/result_row_marks_width"
+        	  android:layout_height="@dimen/result_row_marks_ht"
+        	  android:gravity="center"
+        	  android:textColor="#FFFFFF"
+        	  android:background="@drawable/result_cell"/>
+
+</LinearLayout>

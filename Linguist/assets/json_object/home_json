@@ -1,0 +1,101 @@
+[
+	{
+		"heading" : "Phonetics",
+		"desc" : "Phonetics is the systematic study of the human ability to make and hear sounds which use the vocal organs of speech, especially for producing oral language.\n
+The three branches of Phonetics are\n
+-	Articulatory Phonetics:Production of human speech sound.\n
+-	Auditory Phonetics:Reception of sound by air.\n
+-	Acoustic Phonetics:Physical characteristics of transmission of sound.\n
+One of the most important tools of phonetics and phonology is a special alphabet called the International Phonetic Alphabet or IPA, a standardized representation of the sounds used in human language.  Reading and writing IPA will help you understand what's really happening when people speak.
+.",	
+		"image" : "phonetics.png"
+	},
+	{
+		"heading" : "Semantics",
+		"desc" : "The study of meaning is called semantics. In Semantics we study about the: \n
+-	Antonyms\n
+-	Synonyms\n
+-	Homonymes\n
+-	Polysemy\n
+-	Anomalies\n
+-	Contradictions\n
+-	Ambiguties\n
+-	Semantics features\n
+-	Componential analysis\n
+-	Implications\n
+-	Word and Lexemes.\n
+Antonymes:1.Graddable Antonymes:
+
+Gradable antonyms include pairs like the following:
+beautiful - ugly
+expensive - cheap
+fast - slow
+Complementary Antonymes
+Legal-illegal
+Converse or Relational Antonymes
+ above:below, before:after
+HOMONYMES:spelling and pronunciation will be same but meaning will be different.
+Bank:1. Financial institution  2.river edge
+HomoPhones:Same pronunciation but different form:\t	Bear-Bare\n
+Hyponyme:\t Colour(superordinate term):green-red-yellow\n
+Polysemy:\t One form multiple meaning - \n
+-	Head:Part of the body:top man of the company\n
+Metonymy:Whole-part realationship\n
+-	Car-wheels,room-roof\n
+Ambiguties: A word,Phrase,sentence that has more than one meaning.\n
+Synonyms: Love-Affection\n
+Anomaly: :”My horse is  a software engineer”. (reff:Yule.J(2006))
+
+
+",
+		"image" : ""
+	},
+	{
+		"heading" : "Phonology",
+		"desc" : "Phonology is the study of vocal sounds and sound changes, phonemes and their variants in a particular language. Phonetics is the same for every language whereas Phonology is will differ from the phonology of other language. In which we study about:
+Phoneme: Minimal meaningful unit of distinctive sound features. For e.g. Phoneme /p/in /pat/ and /b/in /bat/.
+Phone: Smallest possible segment of sound.\n
+Allophone: Variation of phoneme. For e.g. /p/-[ 
+Complementary distribution: If two allophones are not in contrast, is known as Complementary distribution.
+Neutralization: Lack of contrast between two phonemes in a particular environment.\n
+Free variation:Non significant linguistic variation between two or more linguistics form is known as free variation. For e.g. /ai/ and /i:/ in pronunciation of word “Either” etc",
+		"image" : ""
+	},
+	{
+		"heading" : "Morphology",
+		"desc" : "Morphology is the study of word structure.
+What is Morphemes?
+Morphemes are the smallest meaningful unit of the language.  
+Words may consist of one or two or more morphemes.There are two types of Morphemes:\n
+1.	Free Morphemes: Can stand alone. For example,”Dog.”
+2.	Bound Morphemes: Can’t stand alone. For   ex “dogs”\n
+Except this we will discuss about
+Root,Stem,base
+Inflectional and Derivational Morphemes
+Prosodic word vs. morphological word
+Types of word formation\n
+Paradigms and morphosyntax\n
+Allomorphy\n
+Lexical Morphology\n
+Morphological Typology\n
+To know more about Morphology visit the upcoming Blog. 
+",
+		"image" : ""
+	},
+	{
+		"heading" : "Syntax",
+		"desc" : "The study of sentence structure is known as Syntax. Sentences are made up of smaller phrases. There are several difference types of phrase that can be used in a sentence, but the two phrases which must be used in a sentence for it to make sense are a noun phrase and a verb phrase .For ex;\n
+		Generative grammar:\n
+The hypothesis of generative grammar is that language is a structure of the human mind. The goal of generative grammar is to make a complete model of this inner language (known as i-language). This model could be used to describe all human language and to predict the grammaticality of any given utterance (that is, to predict whether the utterance would sound correct to native speakers of the language).\n
+This approach to language was pioneered by Noam Chomsky. Most generative theories (although not all of them) assume that syntax is based upon the constituent structure of sentences. Generative grammars are among the theories that focus primarily on the form of a sentence, rather than its communicative function.
+Among the many generative theories of linguistics, the Chomskyan theories are:
+e generative paradigm are:
+Generative semantics (now largely out of date)
+Relational grammar (RG) (now largely out of date)
+Generalized phrase structure grammar (GPSG; now largely out of date)
+Head-driven phrase structure grammar (HPSG)
+Lexical functional grammar (LFG) Transformational grammar (TG) (Original theory of generative syntax laid out by Chomsky in Syntactic Structures in 1957Government and binding theory (GB) (revised theory in the tradition of TG developed mainly by Chomsky in the 1970s and 1980s.Minimalist program (MP) (a reworking of the theory out of the GB framework published by Chomsky in 1995).[source:wiki]
+",
+		"image" : "syntax.png"
+	}
+]

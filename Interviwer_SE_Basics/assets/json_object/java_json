@@ -1,0 +1,324 @@
+[
+	{
+		"title":"Java",
+		"question":"Which of the following statements about arrays is syntactically wrong?",
+		"answers":
+			[
+				{
+					 "answer":"Person[] p = new Person[5];",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Person p[5];",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Person[] p [];",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Person p[][] = new Person[2][];",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question": "Given the following piece of code:\npublic class Test\n {\npublic static void main(String args[]) {int i = 0, j = 5 ;\nfor( ; (i < 3) && (j++ < 10) ; i++ ) {\nSystem.out.print(\" \"+i +\" \"+ j );}\nSystem.out.print(\" \"+i +\" \"+ j );\n}\n}\nwhat will be the result?",
+		"answers":
+			[
+				{
+					 "answer":"0 6 1 7 2 8 3 8",
+					 "correct":"true"
+				},
+				{
+					 "answer":"0 6 1 7 2 8 3 9",
+					 "correct":"false"
+				},
+				{
+					 "answer":"0 5 1 5 2 5 3 5",
+					 "correct":"false"
+				},
+				{
+					 "answer":"compilation fails",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"Java",
+		"question":"Which of the following declarations is correct?",
+		"answers":
+			[
+				{
+					 "answer":"boolean b = TRUE;",
+					 "correct":"false"
+				},
+				{
+					 "answer":"byte b = 255;",
+					 "correct":"false"
+				},
+				{
+					 "answer":"String s = “null”;",
+					 "correct":"true"
+				},
+				{
+					 "answer":"int i = new Integer[“56”];",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Suppose a class has public visibility. In this class we define a protected method. Which of the following statements is correct?",
+		"answers":
+			[
+				{
+					 "answer":"This method is only accessible from inside the class itself and from inside all subclasses.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"In a class, you can not declare methods with a lower visibility than the visibility of the class in which it is defined.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"From within protected methods you do not have access to public methods.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This method is accessible from within the class itself and from within all classes defined in the same package as the class itself.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Given the following piece of code:\n public class Company{\n   public abstract double calculateSalaries(); \n} \n\nwhich of the following statements is true?",
+		"answers":
+			[
+				{
+					 "answer":"The keywords public and abstract can not be used together.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"The method calculateSalaries() in class Company must have a body",
+					 "correct":"false"
+				},
+				{
+					 "answer":"You must add a return statement in method calculateSalaries().",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Class Company must be defined abstract.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Given the following piece of code:\npublic interface Guard{\nvoid doYourJob();\n}\nabstract public class Dog implements Guard{}\nwhich of the following statements is correct?",
+		"answers":
+			[
+				{
+					 "answer":"This code will not compile, because method doYourJob() in interface Guard must be defined abstract.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will not compile, because class Dog must implement method doYourJob() from interface Guard.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will not compile, because in the declaration of class Dog we must use the keyword extends in stead of implements.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will compile without any errors.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		    "question": "Given these classes:\n\npublic class Person{\npublic void talk(){ System.out.print(\"I am a Person\");  }\n}\npublic class Student extends Person {\npublic void talk(){ System.out.print(\"I am a Student\"); \n}\n\nwhat is the result of this piece of code:\npublic class Test{\npublic static void main(String args[]){\nPerson p = new Student();\np.talk();\n}\n}",
+		"answers":
+			[
+				{
+					 "answer":"I am a Person",
+					 "correct":"false"
+				},
+				{
+					 "answer":"I am a Student",
+					 "correct":"true"
+				},
+				{
+					 "answer":"I am a Person I am a Student",
+					 "correct":"false"
+				},
+				{
+					 "answer":"I am a Student I am a Person",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		    "question": "Given the following piece of code:\npublic class Person{\nprivate String firstName;\npublic Person(String fn){ firstName = fn; }\n}\npublic class Student extends Person{\nprivate String studentNumber;\npublic Student(String number) { studentNumber = number; }\n}\n\nWhich of the following statements is true? ",
+		"answers":
+			[
+				{
+					 "answer":"This code will compile if we define in class Person a no-argument constructor.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"This code will compile if we define in class Student a no-argument constructor.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will compile if we add in the constructor of Student the following line of code as first statement: super();",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will not compile if we call the constructor of Person from within the constructor of Student.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Specify the correct characteristics of an enumeration type",
+		"answers":
+			[
+				{
+					 "answer":"enum can define static fields and methods",
+					 "correct":"true"
+				},
+				{
+					 "answer":"enum can contain a public constructor",
+					 "correct":"false"
+				},
+				{
+					 "answer":"enum can not implement interfaces",
+					 "correct":"false"
+				},
+				{
+					 "answer":"enum is a reference to a variable set of constants",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question": "Given the following piece of code:\nclass Person { public int number; }\npublic class Test{\npublic void doIt(int i , Person p){\ni = 5;p.number = 8;\n}\npublic static void main(String args[]){\nint x = 0;\nPerson p = new Person();\nnew Test().doIt(x, p);\nSystem.out.println(x + \" \" + p.number);\n}\n}\n\nWhat is the result?",
+		"answers":
+			[
+				{
+					 "answer":"0 8",
+					 "correct":"true"
+				},
+				{
+					 "answer":"5 0",
+					 "correct":"false"
+				},
+				{
+					 "answer":"0 0",
+					 "correct":"true"
+				},
+				{
+					 "answer":"5 8",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Given the following piece of code:\nclass SalaryCalculationException extends Exception{}\nclass Person{\npublic void calculateSalary()throws SalaryCalculationException {\n//...\nthrow new SalaryCalculationException();\n//...\n}\n}\nclass Company{\npublic void paySalaries(){\nnew Person().calculateSalary();\n}\n}\n\nWhich of the following statements is correct?",
+		"answers":
+			[
+				{
+					 "answer":"This code will compile without any problems.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will compile if in method paySalaries() we return a boolean in stead of void.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will compile if we add a try-catch block in paySalaries()",
+					 "correct":"true"
+				},
+				{
+					 "answer":"This code will not compile if we add throws SalaryCalculationException in the signature of method paySalaries().",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Which of the following statements regarding static methods are correct?",
+		"answers":
+			[
+				{
+					 "answer":"static methods are difficult to maintain, because you can not change their implementation.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"static methods can be called using an object reference to an object of the class in which this method is defined.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"static methods are always public, because they are defined at class-level.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"static methods do not have direct access to non-static methods which are defined inside the same class.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Given the following piece of code:\nclass Person{ public void talk(){} }\npublic class Test{\npublic static void main(String args[]){\nPerson p = null;\ntry{\np.talk();\n} catch(NullPointerException e){\nSystem.out.print(\"There is a NullPointerException. \");\n}catch(Exceptione){\nSystem.out.print(\"There is an Exception. \");\n}\nSystem.out.print(\"Everything went fine. \");\n}\n}\n\nwhat will be the result?",
+		"answers":
+			[
+				{
+					 "answer":"If you run this program, the outcome is: There is a NullPointerException. Everything went fine.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"If you run this program, the outcome is: There is a NullPointerException.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"If you run this program, the outcome is: There is a NullPointerException. There is an Exception.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"This code will not compile, because in Java there are no pointers.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"Java",
+		"question":"Which of the following statement about Generics are correct?",
+		"answers":
+			[
+				{
+					 "answer":"Generics are typed subclasses of the classes from the Collections framework",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Generics are used to parameterize the collections in order to allow for static type checking at compile tIme of the objects in the collection.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Generics can be used to perform type checking of the objects in a collection at runtime.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Generics can not be used to iterate over a complete collection in an easy way, using the ‘enhanced for’ loop.",
+					 "correct":"false"
+				}
+			]
+	}
+]

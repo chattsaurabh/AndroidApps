@@ -1,0 +1,186 @@
+[
+	{
+		"title":"OS",
+		"question":"Translator for low level programming language were termed as",
+		"answers":
+			[
+				{
+					 "answer":"Assembler",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Compiler",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Linker",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Loader",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"OS",
+		"question":"Analysis which determines the meaning of a statement once its grammatical structure becomes known is termed as",
+		"answers":
+			[
+				{
+					 "answer":"Semantic analysis",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Syntax analysis",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Regular analysis",
+					 "correct":"false"
+				},
+				{
+					 "answer":"General analysis",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"Load address for the first word of the program is called",
+		"answers":
+			[
+				{
+					 "answer":"Linker address origin",
+					 "correct":"false"
+				},
+				{
+					 "answer":"load address origin",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Phase library",
+					 "correct":"false"
+				},
+				{
+					 "answer":"absolute library",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"Symbolic names can be associated with",
+		"answers":
+			[
+				{
+					 "answer":"Information",
+					 "correct":"false"
+				},
+				{
+					 "answer":"data or instruction",
+					 "correct":"true"
+				},
+				{
+					 "answer":"operand",
+					 "correct":"false"
+				},
+				{
+					 "answer":"mnemonic operation",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"The translator which perform macro expansion is called a",
+		"answers":
+			[
+				{
+					 "answer":"Macro processor",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Macro pre-processor",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Micro pre-processor",
+					 "correct":"false"
+				},
+				{
+					 "answer":"assembler",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"Shell is the exclusive feature of",
+		"answers":
+			[
+				{
+					 "answer":"UNIX",
+					 "correct":"true"
+				},
+				{
+					 "answer":"DOS",
+					 "correct":"false"
+				},
+				{
+					 "answer":"System software",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Application software",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"A program in execution is called",
+		"answers":
+			[
+				{
+					 "answer":"Process",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Instruction",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Procedure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Function",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OS",
+		"question":"Interval between the time of submission and completion of the job is called",
+		"answers":
+			[
+				{
+					 "answer":"Waiting time",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Turnaround time",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Throughput",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Response time",
+					 "correct":"false"
+				}
+			]
+	}
+]

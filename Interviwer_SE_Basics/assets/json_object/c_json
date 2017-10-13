@@ -1,0 +1,370 @@
+[
+	{
+		"title":"C",
+		"question":"What is (void*)0?",
+		"answers":
+			[
+				{
+					 "answer":"Representation of NULL pointer",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Representation of void pointer",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Error",
+					 "correct":"false"
+				},
+				{
+					 "answer":"None of these",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"C",
+		"question":"Can you combine the following two statements into one?\n\nchar *p;\np = (char*) malloc(100);",
+		"answers":
+			[
+				{
+					 "answer":"char p = *malloc(100);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"char *p = (char) malloc(100);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"char *p = (char*)malloc(100);",
+					 "correct":"true"
+				},
+				{
+					 "answer":"char *p = (char *)(malloc*)(100);",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"In which header file is the NULL macro defined?",
+		"answers":
+			[
+				{
+					 "answer":"stdio.h",
+					 "correct":"false"
+				},
+				{
+					 "answer":"stddef.h",
+					 "correct":"false"
+				},
+				{
+					 "answer":"stdio.h and stddef.h",
+					 "correct":"true"
+				},
+				{
+					 "answer":"math.h",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"How many bytes are occupied by near, far and huge pointers (DOS)?",
+		"answers":
+			[
+				{
+					 "answer":"near=2 far=4 huge=4",
+					 "correct":"true"
+				},
+				{
+					 "answer":"near=4 far=8 huge=8",
+					 "correct":"false"
+				},
+				{
+					 "answer":"near=2 far=4 huge=8",
+					 "correct":"false"
+				},
+				{
+					 "answer":"near=4 far=4 huge=8",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable?",
+		"answers":
+			[
+				{
+					 "answer":".",
+					 "correct":"false"
+				},
+				{
+					 "answer":"&",
+					 "correct":"false"
+				},
+				{
+					 "answer":"*",
+					 "correct":"false"
+				},
+				{
+					 "answer":"->",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"What would be the equivalent pointer expression for referring the array element\n\n a[i][j][k][l]",
+		"answers":
+			[
+				{
+					 "answer":"((((a+i)+j)+k)+l)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"*(*(*(*(a+i)+j)+k)+l)",
+					 "correct":"true"
+				},
+				{
+					 "answer":"(((a+i)+j)+k+l)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"((a+i)+j+k+l)",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"A pointer is",
+		"answers":
+			[
+				{
+					 "answer":"A keyword used to create variables",
+					 "correct":"false"
+				},
+				{
+					 "answer":"A variable that stores address of an instruction",
+					 "correct":"false"
+				},
+				{
+					 "answer":"A variable that stores address of other variable",
+					 "correct":"true"
+				},
+				{
+					 "answer":"All of these",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"The operator used to get value at address stored in a pointer variable is",
+		"answers":
+			[
+				{
+					 "answer":"*",
+					 "correct":"true"
+				},
+				{
+					 "answer":"&",
+					 "correct":"false"
+				},
+				{
+					 "answer":"&&",
+					 "correct":"false"
+				},
+				{
+					 "answer":"||",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"How will you free the allocated memory ?",
+		"answers":
+			[
+				{
+					 "answer":"remove(var-name);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"free(var-name);",
+					 "correct":"true"
+				},
+				{
+					 "answer":"delete(var-name);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"dalloc(var-name);",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"What is the similarity between a structure, union and enumeration?",
+		"answers":
+			[
+				{
+					 "answer":"All of them let you define new values",
+					 "correct":"false"
+				},
+				{
+					 "answer":"All of them let you define new data types",
+					 "correct":"true"
+				},
+				{
+					 "answer":"All of them let you define new pointers",
+					 "correct":"false"
+				},
+				{
+					 "answer":"All of them let you define new structures",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"Which bitwise operator is suitable for turning off a particular bit in a number?",
+		"answers":
+			[
+				{
+					 "answer":"&& operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"& operator",
+					 "correct":"true"
+				},
+				{
+					 "answer":"|| operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"! operator",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"Which bitwise operator is suitable for turning on a particular bit in a number?",
+		"answers":
+			[
+				{
+					 "answer":"&& operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"& operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"|| operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"| operator",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"Which bitwise operator is suitable for checking whether a particular bit is on or off?",
+		"answers":
+			[
+				{
+					 "answer":"&& operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"& operator",
+					 "correct":"true"
+				},
+				{
+					 "answer":"|| operator",
+					 "correct":"false"
+				},
+				{
+					 "answer":"! operator",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"Which header file should be included to use functions like malloc() and calloc()?",
+		"answers":
+			[
+				{
+					 "answer":"memory.h",
+					 "correct":"false"
+				},
+				{
+					 "answer":"stdlib.h",
+					 "correct":"true"
+				},
+				{
+					 "answer":"string.h",
+					 "correct":"false"
+				},
+				{
+					 "answer":"dos.h",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"What function should be used to free the memory allocated by calloc() ?",
+		"answers":
+			[
+				{
+					 "answer":"dealloc();",
+					 "correct":"false"
+				},
+				{
+					 "answer":"malloc(variable_name, 0)",
+					 "correct":"false"
+				},
+				{
+					 "answer":"free();",
+					 "correct":"true"
+				},
+				{
+					 "answer":"memalloc(variable_name, 0)",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"C",
+		"question":"How will you free the memory allocated by the following program?\n\n #include<stdio.h>\n#include<stdlib.h>\n#define MAXROW 3\n#define MAXCOL 4\n\nint main()\n{\n  int **p, i, j;\np = (int **) malloc(MAXROW * sizeof(int*));\nreturn 0;\n}",
+		"answers":
+			[
+				{
+					 "answer":"memfree(int p);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"dealloc(p);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"malloc(p, 0);",
+					 "correct":"false"
+				},
+				{
+					 "answer":"free(p);",
+					 "correct":"true"
+				}
+			]
+	}
+]

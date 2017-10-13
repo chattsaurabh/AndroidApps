@@ -1,0 +1,370 @@
+[
+	{
+		"title":"OOPs",
+		"question":"The process of building new classes from existing one is called",
+		"answers":
+			[
+				{
+					 "answer":"Polymorphism",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Structure",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Inheritance",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Cascading",
+					 "correct":"false"
+				}
+			]
+	},	
+	{
+		"title":"OOPs",
+		"question":"If a class C is derived from class B, which is derived from class A, all through public inheritance, then a class C member function can access",
+		"answers":
+			[
+				{
+					 "answer":"protected and public data only in C and B.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"protected and public data only in C.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"private data in A and B.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"protected data in A and B.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"Usually a pure virtual function",
+		"answers":
+			[
+				{
+					 "answer":"has complete function body.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"will never be called.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"will be called only to delete an object.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"is defined only in derived class.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"Overloading the function operator",
+		"answers":
+			[
+				{
+					 "answer":"requires a class with an overloaded operator.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"requires a class with an overloaded [ ] operator.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"allows you to create objects that act syntactically like functions.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"usually make use of a constructor that takes arguments.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"Mechanism of deriving a class from another derived class is known as",
+		"answers":
+			[
+				{
+					 "answer":"Polymorphism",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Single Inheritance",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Multilevel Inheritance",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Message Passing",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"RunTime Polymorphism is achieved by",
+		"answers":
+			[
+				{
+					 "answer":"friend function",
+					 "correct":"false"
+				},
+				{
+					 "answer":"virtual function",
+					 "correct":"true"
+				},
+				{
+					 "answer":"operator overloading",
+					 "correct":"false"
+				},
+				{
+					 "answer":"function overloading",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"A function call mechanism that passes arguments to a function by passing a copy of the values of the arguments is",
+		"answers":
+			[
+				{
+					 "answer":"call by name",
+					 "correct":"false"
+				},
+				{
+					 "answer":"call by value",
+					 "correct":"true"
+				},
+				{
+					 "answer":"call by reference",
+					 "correct":"false"
+				},
+				{
+					 "answer":"call by value result",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"In C++, dynamic memory allocation is accomplished with the operator",
+		"answers":
+			[
+				{
+					 "answer":"new",
+					 "correct":"true"
+				},
+				{
+					 "answer":"this",
+					 "correct":"false"
+				},
+				{
+					 "answer":"malloc( )",
+					 "correct":"false"
+				},
+				{
+					 "answer":"delete",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"A variable defined within a block is visible",
+		"answers":
+			[
+				{
+					 "answer":"from the point of definition onward in the program.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"from the point of definition onward in the function.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"from the point of definition onward in the block.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"throughout the function.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"The break statement causes an exit",
+		"answers":
+			[
+				{
+					 "answer":"from the innermost loop only.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"only from the innermost switch.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"from all loops & switches.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"from the innermost loop or switch.",
+					 "correct":"true"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"A property which is not true for classes is that they",
+		"answers":
+			[
+				{
+					 "answer":"are removed from memory when not in use.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"permit data to be hidden from other classes.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"bring together all aspects of an entity in one place.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Can closely model objects in the real world.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"The process of building new classes from existing one is called",
+		"answers":
+			[
+				{
+					 "answer":"Structure.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Inheritance.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"Polymorphism.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"Template.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"If you wanted to sort many large objects or structures, it would be most efficient to",
+		"answers":
+			[
+				{
+					 "answer":"place them in an array & sort the array.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"place pointers to them in an array & sort the array.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"place them in a linked list and sort the linked list.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"place references to them in an array and sort the array.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"A struct is the same as a class except that",
+		"answers":
+			[
+				{
+					 "answer":"there are no member functions.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"all members are public.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"cannot be used in inheritance hierarchy.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"it does have a this pointer.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"Pure virtual functions",
+		"answers":
+			[
+				{
+					 "answer":"have to be redefined in the inherited class.",
+					 "correct":"true"
+				},
+				{
+					 "answer":"cannot have public access specification.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"are mandatory for a virtual class.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"None of these.",
+					 "correct":"false"
+				}
+			]
+	},
+	{
+		"title":"OOPs",
+		"question":"Use of virtual functions implies",
+		"answers":
+			[
+				{
+					 "answer":"overloading.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"overriding.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"static binding.",
+					 "correct":"false"
+				},
+				{
+					 "answer":"dynamic binding.",
+					 "correct":"true"
+				}
+			]
+	}
+]

@@ -1,0 +1,22 @@
+[
+	{
+		"topic":"Phonetics",
+		"data_file":"phonetics_json"
+	},
+	{
+		"topic":"Phonology",
+		"data_file":"phonology_json"
+	},
+	{
+		"topic":"Morphology",
+		"data_file":"morphology_json"
+	},
+	{	
+		"topic":"Semantics",
+		"data_file":"semantics_json"
+	},
+	{	
+		"topic":"Syntax",
+		"data_file":"syntax_json"
+	}
+]
