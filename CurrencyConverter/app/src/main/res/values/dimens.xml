@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prog_dialog_padding">10dp</dimen>
+    <dimen name="spinner_ht">60dp</dimen>
+    <dimen name="rates_item_size">15sp</dimen>
+    <dimen name="rates_item_padding">10dp</dimen>
+</resources>

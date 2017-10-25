@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="prog_dialog_loading">Loading ...</string>
+    <string name="prog_dialog_wait">Please wait ...</string>
+</resources>
