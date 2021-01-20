@@ -1,0 +1,13 @@
+Kobo code challenge:
+
+Below are few assumtions and details of some libraries used:
+
+1.	I have used Volley for network call integration.
+2.	I have used Picasso for image downloads. Picasso has an inbuilt caching mechanism for images downloaded.
+3.  I have implemented a custom Callback for propagating response from API calls to the individual view models
+4.	I have used MVVM pattern.
+5.	The home screen is fetching the list of users from the 1st API
+6.	The user details page is fetching all user details for a selected user from home screen.
+7.  Home screen does not have complex list items so I ave used list view
+8.	User details page uses a recycler view with view holder pattern which makes the multiple network call integration smoother.
+9. 	All sorting and filter use cases are added in the User details page.

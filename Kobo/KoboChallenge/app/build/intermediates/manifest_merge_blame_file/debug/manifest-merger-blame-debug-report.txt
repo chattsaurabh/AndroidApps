@@ -1,0 +1,98 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kobo.demo.challenge"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:5:5-66
+11-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:7:5-34:19
+14        android:allowBackup="true"
+14-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity android:name="com.kobo.demo.challenge.activities.SplashActivity" >
+23-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:15:9-20:20
+23-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:15:19-60
+24            <intent-filter>
+24-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:16:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:17-69
+25-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:18:17-77
+27-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity android:name="com.kobo.demo.challenge.activities.UserDetailActivity" >
+30-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:21:9-26:20
+30-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:21:19-64
+31            <intent-filter>
+31-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:22:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:17-69
+32-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:25-66
+33
+34                <category android:name="android.intent.category.DEFAULT" />
+34-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:24:17-75
+34-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:24:27-73
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.kobo.demo.challenge.activities.HomeActivity" >
+37-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:27:9-32:20
+37-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:27:19-58
+38            <intent-filter>
+38-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:22:13-25:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:17-69
+39-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:17:25-66
+40
+41                <category android:name="android.intent.category.DEFAULT" />
+41-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:24:17-75
+41-->E:\SOFTWARES\ANDROID_SRC\KoboChallenge\app\src\main\AndroidManifest.xml:24:27-73
+42            </intent-filter>
+43        </activity>
+44
+45        <provider
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\ea76172c46a3fc0ac2554eed6de48dea\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+46            android:name="com.squareup.picasso.PicassoProvider"
+46-->[com.squareup.picasso:picasso:2.71828] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\ea76172c46a3fc0ac2554eed6de48dea\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+47            android:authorities="com.kobo.demo.challenge.com.squareup.picasso"
+47-->[com.squareup.picasso:picasso:2.71828] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\ea76172c46a3fc0ac2554eed6de48dea\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+48            android:exported="false" />
+48-->[com.squareup.picasso:picasso:2.71828] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\ea76172c46a3fc0ac2554eed6de48dea\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+49        <provider
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\a6511e21a7fbe5087afe20d2c7ae1b69\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+50            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\a6511e21a7fbe5087afe20d2c7ae1b69\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+51            android:authorities="com.kobo.demo.challenge.lifecycle-process"
+51-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\a6511e21a7fbe5087afe20d2c7ae1b69\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+52            android:exported="false"
+52-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\a6511e21a7fbe5087afe20d2c7ae1b69\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+53            android:multiprocess="true" />
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Saurabh Chatterjee\.gradle\caches\transforms-2\files-2.1\a6511e21a7fbe5087afe20d2c7ae1b69\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+54    </application>
+55
+56</manifest>
