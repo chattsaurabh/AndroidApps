@@ -1,0 +1,78 @@
+{
+  "sourceColors": [
+    {"color": "yellow"},
+    {"color": "purple"},
+    {"color": "green"},
+    {"color": "red"},
+    {"color": "blue"}
+  ],
+  "sourceShapes": [
+    {"shape": "square"},
+    {"shape": "circle"},
+    {"shape": "triangle"},
+    {"shape": "line"},
+    {"shape": "rectangle"}
+  ],
+  "mappings": [
+    {
+      "sourceColor": "yellow",
+      "sourceShape": "square",
+      "destinationColor": "red",
+      "destinationShape": "rectangle"
+    },
+    {
+      "sourceColor": "yellow",
+      "sourceShape": "circle",
+      "destinationColor": "purple",
+      "destinationShape": "line"
+    },
+    {
+      "sourceColor": "yellow",
+      "sourceShape": "triangle",
+      "destinationColor": "green",
+      "destinationShape": "circle"
+    },
+    {
+      "sourceColor": "yellow",
+      "sourceShape": "line",
+      "destinationColor": "blue",
+      "destinationShape": "square"
+    },
+    {
+      "sourceColor": "yellow",
+      "sourceShape": "rectangle",
+      "destinationColor": "purple",
+      "destinationShape": "circle"
+    },
+    {
+      "sourceColor": "purple",
+      "sourceShape": "square",
+      "destinationColor": "red",
+      "destinationShape": "rectangle"
+    },
+    {
+      "sourceColor": "purple",
+      "sourceShape": "circle",
+      "destinationColor": "purple",
+      "destinationShape": "line"
+    },
+    {
+      "sourceColor": "purple",
+      "sourceShape": "triangle",
+      "destinationColor": "green",
+      "destinationShape": "circle"
+    },
+    {
+      "sourceColor": "purple",
+      "sourceShape": "line",
+      "destinationColor": "blue",
+      "destinationShape": "square"
+    },
+    {
+      "sourceColor": "purple",
+      "sourceShape": "rectangle",
+      "destinationColor": "purple",
+      "destinationShape": "circle"
+    }
+  ]
+}
