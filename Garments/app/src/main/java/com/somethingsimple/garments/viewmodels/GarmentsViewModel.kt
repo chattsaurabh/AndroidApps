@@ -12,6 +12,8 @@ import kotlin.collections.ArrayList
 
 class GarmentsViewModel : ViewModel() {
 
+    var sortMode: SortMode = SortMode.ALPHA
+
     private var garmentsModel :ArrayList<Garment>? = null
 
     var responseLiveData = MutableLiveData<ArrayList<Garment>>()
@@ -23,7 +25,18 @@ class GarmentsViewModel : ViewModel() {
         val inputData = adapter.fromJson(inputSource)
 
         garmentsModel = inputData?.garments
-        responseLiveData.postValue(garmentsModel)
+        updateForSortMode()
+    }
+
+    private fun updateForSortMode() {
+        when (sortMode) {
+            SortMode.ALPHA -> {
+                sortbyName()
+            }
+            SortMode.TIME -> {
+                sortByTime()
+            }
+        }
     }
 
     fun addGarment(garmentName: String) {
@@ -31,7 +44,7 @@ class GarmentsViewModel : ViewModel() {
             garmentName,
             System.currentTimeMillis().toString()
         ))
-        responseLiveData.postValue(garmentsModel)
+        updateForSortMode()
     }
 
     fun createGarmentsForPersisting(): String? {
@@ -41,6 +54,7 @@ class GarmentsViewModel : ViewModel() {
     }
 
     fun sortbyName() {
+        sortMode = SortMode.ALPHA
         garmentsModel?.let {
             it.sortWith(Comparator { firstGarment, secondGarment ->
                 firstGarment.name.compareTo(secondGarment.name)
@@ -50,11 +64,17 @@ class GarmentsViewModel : ViewModel() {
     }
 
     fun sortByTime() {
+        sortMode = SortMode.TIME
         garmentsModel?.let {
             it.sortWith(Comparator { firstGarment, secondGarment ->
                 firstGarment.timestamp.compareTo(secondGarment.timestamp)
             })
         }
         responseLiveData.postValue(garmentsModel)
+    }
+
+    enum class SortMode {
+        ALPHA,
+        TIME
     }
 }
