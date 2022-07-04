@@ -1,0 +1,20 @@
+{
+  "garments": [
+    {
+      "name": "Dress",
+      "timestamp": "10000"
+    },
+    {
+      "name": "Pant",
+      "timestamp": "20000"
+    },
+    {
+      "name": "Shirt",
+      "timestamp": "30000"
+    },
+    {
+      "name": "Tshirt",
+      "timestamp": "40000"
+    }
+  ]
+}
