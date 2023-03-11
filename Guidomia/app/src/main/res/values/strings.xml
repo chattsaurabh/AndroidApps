@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Guidomia</string>
+
+    <string name="price_prefix">Price: </string>
 </resources>
