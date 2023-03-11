@@ -15,6 +15,14 @@ import kotlinx.coroutines.launch
 class GuidomiaViewmodel(application: Application) : AndroidViewModel(application) {
 
     var guidomiaLiveData = MutableLiveData<List<IRecycleELement>>()
+        private set
+
+    var makeFilterLiveData = MutableLiveData<ArrayList<String>>()
+        private set
+
+    var modelFilterLiveData = MutableLiveData<ArrayList<String>>()
+        private set
+
     private var data: List<GuidomiaData>? = null
 
     fun fetchData() {
@@ -25,9 +33,26 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
             val adapter: JsonAdapter<List<GuidomiaData>> = moshi.adapter(listType)
 
             data = adapter.fromJson(inputSource)
+            buildFilterData()
             buildDataForList(data, 0)
 
         }
+    }
+
+    private fun buildFilterData() {
+        var makeFilter = ArrayList<String>().apply {
+            add("Any make")
+        }
+        var modelFilter = ArrayList<String>().apply {
+            add("Any model")
+        }
+
+        data?.forEach { guidomiaData ->
+            guidomiaData.make?.let { it -> makeFilter.add(it) }
+            guidomiaData.model?.let { it -> modelFilter.add(it) }
+        }
+        makeFilterLiveData.postValue(makeFilter)
+        modelFilterLiveData.postValue(modelFilter)
     }
 
     private fun buildDataForList(inputData: List<GuidomiaData>?, indexExpanded: Int) {

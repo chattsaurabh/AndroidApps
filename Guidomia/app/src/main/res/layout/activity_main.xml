@@ -14,12 +14,46 @@
         android:src="@drawable/tacoma"
         android:layout_alignParentTop="true"/>
 
+    <LinearLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_12"
+        android:layout_margin="@dimen/margin_12"
+        android:background="@drawable/filter_bg"
+        android:gravity="start"
+        android:layout_below="@+id/launchImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/light_gray"
+            android:text="@string/filters"/>
+
+        <Spinner
+            android:id="@+id/make_spinner"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="@dimen/margin_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"/>
+
+        <Spinner
+            android:id="@+id/model_spinner"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="@dimen/margin_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"/>
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/margin_12"
         android:layout_marginBottom="@dimen/margin_12"
-        android:layout_below="@+id/launchImage"/>
+        android:layout_below="@+id/filter_container"/>
 
 </RelativeLayout>
