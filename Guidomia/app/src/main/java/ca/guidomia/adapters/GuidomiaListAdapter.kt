@@ -1,15 +1,23 @@
 package ca.guidomia.adapters
 
+import android.R.color
 import android.annotation.SuppressLint
 import android.content.Context
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.BulletSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import androidx.core.text.toSpannable
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import ca.guidomia.R
+
 
 class GuidomiaListAdapter(
     private val context: Context?
@@ -35,6 +43,10 @@ class GuidomiaListAdapter(
         val name: TextView = itemView.findViewById(R.id.name)
         val price: TextView = itemView.findViewById(R.id.price)
         val rating: RatingBar = itemView.findViewById(R.id.rating)
+        val prosTitle: TextView = itemView.findViewById(R.id.pros_title)
+        val pros: TextView = itemView.findViewById(R.id.pros_list)
+        val consTitle: TextView = itemView.findViewById(R.id.cons_title)
+        val cons: TextView = itemView.findViewById(R.id.cons_list)
     }
 
     class DividerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -76,6 +88,9 @@ class GuidomiaListAdapter(
             }
             is CarViewHolder -> {
                 if (rowData is CarInfo) {
+                    rowData.clickListener?.let {
+                        holder.itemView.setOnClickListener(it)
+                    }
                     rowData.icon?.let {
                         holder.carImage.setImageResource(it)
                     }
@@ -85,10 +100,65 @@ class GuidomiaListAdapter(
                             .append(context?.getText(R.string.price_prefix))
                             .append(it.marketPrice.toK()).toString()
                         holder.rating.rating = (it.rating?.toFloat() ?: 5.0) as Float
+
+                        if(rowData.isExpanded) {
+                            buildProsString(it)?.let { pros ->
+                                holder.prosTitle.isVisible = true
+                                holder.pros.isVisible = true
+                                holder.pros.text = pros
+                            }
+                            buildConsString(it)?.let { cons ->
+                                holder.consTitle.isVisible = true
+                                holder.cons.isVisible = true
+                                holder.cons.text = cons
+                            }
+                        } else {
+                            holder.prosTitle.isVisible = false
+                            holder.pros.isVisible = false
+                            holder.consTitle.isVisible = false
+                            holder.cons.isVisible = false
+                        }
+
                     }
                 }
             }
         }
+    }
+
+    private fun buildProsString(data: GuidomiaData): SpannableString? {
+        if(data.prosList.isNullOrEmpty()){
+            return null
+        }
+        return createSpannableStringList(data.prosList!!)
+    }
+
+    private fun buildConsString(data: GuidomiaData): SpannableString? {
+        if(data.consList.isNullOrEmpty()){
+            return null
+        }
+        return createSpannableStringList(data.consList!!)
+    }
+
+    private fun createSpannableStringList(stringList: List<String?>): SpannableString? {
+        var builder = SpannableStringBuilder()
+        stringList.forEachIndexed { index, s ->
+            if(!s.isNullOrEmpty()) {
+                val string = SpannableString(s)
+                string.setSpan(
+                    context?.getColor(R.color.orange_)?.let { BulletSpan(40, it, 10) },
+                    0,
+                    string.length,
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+                )
+                builder.append(string)
+                if (index < stringList.lastIndex) {
+                    builder.append("\n")
+                }
+            }
+        }
+
+
+        return SpannableString(builder)
     }
 
     override fun getItemCount(): Int {

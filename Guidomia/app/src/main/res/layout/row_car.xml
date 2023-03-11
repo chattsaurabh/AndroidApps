@@ -18,6 +18,7 @@
         tools:src="@drawable/alpine_roadster" />
 
     <LinearLayout
+        android:id="@+id/car_data_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12"
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:gravity="top"
             android:textSize="@dimen/size_16"
+            android:textColor="@color/dark_gray"
             tools:text="BMW Alpine" />
 
         <TextView
@@ -38,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/size_12"
+            android:textColor="@color/dark_gray"
             tools:text="Price : 65k" />
 
         <RatingBar
@@ -49,5 +52,44 @@
             tools:rating="5"/>
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/pros_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/dark_gray"
+        android:text="@string/pros_prefix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_image"/>
+
+    <TextView
+        android:id="@+id/pros_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pros_title"/>
+
+    <TextView
+        android:id="@+id/cons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/dark_gray"
+        android:text="@string/cons_prefix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pros_list"/>
+
+    <TextView
+        android:id="@+id/cons_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_title"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

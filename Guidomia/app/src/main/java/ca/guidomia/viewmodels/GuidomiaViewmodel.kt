@@ -15,6 +15,8 @@ import kotlinx.coroutines.launch
 class GuidomiaViewmodel(application: Application) : AndroidViewModel(application) {
 
     var guidomiaLiveData = MutableLiveData<List<IRecycleELement>>()
+    private var data: List<GuidomiaData>? = null
+
     fun fetchData() {
         viewModelScope.launch {
             var inputSource = readDataFromResource()
@@ -22,19 +24,23 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
             val listType = Types.newParameterizedType(List::class.java, GuidomiaData::class.java)
             val adapter: JsonAdapter<List<GuidomiaData>> = moshi.adapter(listType)
 
-            val inputData = adapter.fromJson(inputSource)
-            buildDataForList(inputData)
+            data = adapter.fromJson(inputSource)
+            buildDataForList(data, 0)
 
         }
     }
 
-    private fun buildDataForList(inputData: List<GuidomiaData>?) {
+    private fun buildDataForList(inputData: List<GuidomiaData>?, indexExpanded: Int) {
         var listData = mutableListOf<IRecycleELement>()
         inputData?.forEachIndexed { index, carData ->
             listData.add(
                 CarInfo(
                     icon = getIconForCar(carData.model),
-                    guidomiaCarInfo = carData
+                    guidomiaCarInfo = carData,
+                    isExpanded = index == indexExpanded,
+                    clickListener = {
+                        buildDataForList(data, index)
+                    }
                 )
             )
             if(index < inputData.lastIndex) {

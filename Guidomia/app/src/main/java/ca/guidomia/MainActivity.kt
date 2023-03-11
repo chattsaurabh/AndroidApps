@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupObservers() {
         viewmodel.guidomiaLiveData.observe(this, Observer {
             adapter.setData(it)
-            adapter.notifyItemMoved(0, it.size)
+            adapter.notifyItemRangeChanged(0, it.size)
         })
     }
 

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">GUIDOMIA</string>
 
-    <string name="price_prefix">Price: </string>
+    <string name="price_prefix">Price : </string>
+    <string name="pros_prefix">Pros : </string>
+    <string name="cons_prefix">Cons : </string>
 </resources>
