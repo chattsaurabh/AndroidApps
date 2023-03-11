@@ -30,18 +30,20 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
 
     private fun buildDataForList(inputData: List<GuidomiaData>?) {
         var listData = mutableListOf<IRecycleELement>()
-        inputData?.forEach { carData ->
+        inputData?.forEachIndexed { index, carData ->
             listData.add(
                 CarInfo(
                     icon = getIconForCar(carData.model),
                     guidomiaCarInfo = carData
                 )
             )
-            listData.add(
-                Divider(
-                    isDivider = true
+            if(index < inputData.lastIndex) {
+                listData.add(
+                    Divider(
+                        isDivider = true
+                    )
                 )
-            )
+            }
         }
         guidomiaLiveData.postValue(listData)
     }
