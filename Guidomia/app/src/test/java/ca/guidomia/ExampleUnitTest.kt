@@ -1,4 +1,4 @@
-package ca.richmond.guidomia
+package ca.guidomia
 
 import org.junit.Test
 

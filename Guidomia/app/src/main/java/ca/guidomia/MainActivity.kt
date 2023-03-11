@@ -1,18 +1,17 @@
-package ca.richmond.guidomia
+package ca.guidomia
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import ca.richmond.guidomia.adapters.GuidomiaData
-import ca.richmond.guidomia.adapters.GuidomiaListAdapter
-import ca.richmond.guidomia.databinding.ActivityMainBinding
-import ca.richmond.guidomia.viewmodels.GuidomiaViewmodel
+import ca.guidomia.adapters.GuidomiaListAdapter
+import ca.guidomia.databinding.ActivityMainBinding
+import ca.guidomia.viewmodels.GuidomiaViewmodel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
-    private var adapter = GuidomiaListAdapter(this)
+    private lateinit var adapter : GuidomiaListAdapter
     private val viewmodel: GuidomiaViewmodel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupList() {
+        adapter = GuidomiaListAdapter(this)
         val list = binding.recyclerView
         list.layoutManager = LinearLayoutManager(this)
         list.adapter = adapter

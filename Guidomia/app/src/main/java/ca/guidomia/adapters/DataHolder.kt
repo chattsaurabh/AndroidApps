@@ -1,4 +1,4 @@
-package ca.richmond.guidomia.adapters
+package ca.guidomia.adapters
 
 import androidx.annotation.DrawableRes
 

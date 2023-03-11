@@ -1,4 +1,4 @@
-package ca.richmond.guidomia.adapters
+package ca.guidomia.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ca.richmond.guidomia.R
+import ca.guidomia.R
 
 class GuidomiaListAdapter(
     private val context: Context?
@@ -83,7 +83,7 @@ class GuidomiaListAdapter(
                         holder.name.text = it.make + " " +it.model
                         holder.price.text = StringBuilder()
                             .append(context?.getText(R.string.price_prefix))
-                            .append(it.marketPrice).toString()
+                            .append(it.marketPrice.toK()).toString()
                         holder.rating.rating = (it.rating?.toFloat() ?: 5.0) as Float
                     }
                 }
@@ -94,4 +94,8 @@ class GuidomiaListAdapter(
     override fun getItemCount(): Int {
         return data.size
     }
+}
+
+private fun Int?.toK(): String {
+    return this?.div(1000).toString() + "k"
 }

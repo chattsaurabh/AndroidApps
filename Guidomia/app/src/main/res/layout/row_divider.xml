@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="@dimen/margin_12"
-    android:layout_marginBottom="@dimen/margin_12"
+    android:layout_margin="@dimen/margin_12"
     android:clickable="false">
 
     <View android:layout_width="match_parent"

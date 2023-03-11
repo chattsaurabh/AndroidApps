@@ -1,10 +1,7 @@
-package ca.richmond.guidomia.adapters
+package ca.guidomia.adapters
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-
-@JsonClass(generateAdapter = true)
-data class GuidomiaDataList(@Json(name = "list") val list: List<GuidomiaData>)
 
 @JsonClass(generateAdapter = true)
 data class GuidomiaData(

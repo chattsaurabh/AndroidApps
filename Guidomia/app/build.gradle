@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'ca.richmond.guidomia'
+    namespace 'ca.guidomia'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ca.richmond.guidomia"
+        applicationId "ca.guidomia"
         minSdk 28
         targetSdk 33
         versionCode 1

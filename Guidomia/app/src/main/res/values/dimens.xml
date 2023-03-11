@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_12">12dp</dimen>
 
+    <dimen name="size_12">12sp</dimen>
     <dimen name="size_16">16sp</dimen>
 
+    <dimen name="dimen_1">1dp</dimen>
     <dimen name="dimen_4">4dp</dimen>
     <dimen name="dimen_48">48dp</dimen>
     <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
 </resources>

@@ -1,4 +1,4 @@
-package ca.richmond.guidomia
+package ca.guidomia
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
