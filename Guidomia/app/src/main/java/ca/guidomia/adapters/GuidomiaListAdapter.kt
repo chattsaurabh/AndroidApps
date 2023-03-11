@@ -1,6 +1,5 @@
 package ca.guidomia.adapters
 
-import android.R.color
 import android.annotation.SuppressLint
 import android.content.Context
 import android.text.SpannableString
@@ -13,7 +12,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
-import androidx.core.text.toSpannable
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import ca.guidomia.R
@@ -22,10 +20,11 @@ import ca.guidomia.R
 class GuidomiaListAdapter(
     private val context: Context?
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    private lateinit var data : List<IRecycleELement>
+    private var data = ArrayList<IRecycleELement>()
 
-    fun setData(data : List<IRecycleELement>) {
-        this.data = data
+    fun setData(data : ArrayList<IRecycleELement>) {
+        this.data.clear()
+        this.data.addAll(data)
     }
 
     private val inflater = LayoutInflater.from(context)

@@ -12,9 +12,11 @@ import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.launch
 
+const val ANY_MAKE = "Any make"
+const val ANY_MODEL = "Any model"
 class GuidomiaViewmodel(application: Application) : AndroidViewModel(application) {
 
-    var guidomiaLiveData = MutableLiveData<List<IRecycleELement>>()
+    var guidomiaLiveData = MutableLiveData<ArrayList<IRecycleELement>>()
         private set
 
     var makeFilterLiveData = MutableLiveData<ArrayList<String>>()
@@ -24,6 +26,10 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
         private set
 
     private var data: List<GuidomiaData>? = null
+    private var filteredData: List<GuidomiaData>? = null
+
+    private var currentFilteredMake: String = ANY_MAKE
+    private var  currentFilteredModel: String = ANY_MODEL
 
     fun fetchData() {
         viewModelScope.launch {
@@ -41,10 +47,10 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
 
     private fun buildFilterData() {
         var makeFilter = ArrayList<String>().apply {
-            add("Any make")
+            add(ANY_MAKE)
         }
         var modelFilter = ArrayList<String>().apply {
-            add("Any model")
+            add(ANY_MODEL)
         }
 
         data?.forEach { guidomiaData ->
@@ -55,8 +61,36 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
         modelFilterLiveData.postValue(modelFilter)
     }
 
+    fun filterOnMake(make: String) {
+        val subData = ArrayList<GuidomiaData>()
+        if (ANY_MAKE == make) {
+            buildDataForList(data, 0)
+        } else {
+            data?.forEach {
+                if (make == it.make) {
+                    subData.add(it)
+                }
+            }
+            buildDataForList(subData, 0)
+        }
+    }
+
+    fun filterOnModel(model: String) {
+        val subData = ArrayList<GuidomiaData>()
+        if (ANY_MODEL == model) {
+            buildDataForList(data, 0)
+        } else {
+            data?.forEach {
+                if (model == it.model) {
+                    subData.add(it)
+                }
+            }
+            buildDataForList(subData, 0)
+        }
+    }
+
     private fun buildDataForList(inputData: List<GuidomiaData>?, indexExpanded: Int) {
-        var listData = mutableListOf<IRecycleELement>()
+        var listData = ArrayList<IRecycleELement>()
         inputData?.forEachIndexed { index, carData ->
             listData.add(
                 CarInfo(
