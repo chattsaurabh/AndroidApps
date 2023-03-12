@@ -14,6 +14,7 @@ import kotlinx.coroutines.launch
 
 const val ANY_MAKE = "Any make"
 const val ANY_MODEL = "Any model"
+
 class GuidomiaViewmodel(application: Application) : AndroidViewModel(application) {
 
     var guidomiaLiveData = MutableLiveData<ArrayList<IRecycleELement>>()
@@ -25,20 +26,24 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
     var modelFilterLiveData = MutableLiveData<ArrayList<String>>()
         private set
 
-    private var data: List<GuidomiaData>? = null
-    private var filteredData: List<GuidomiaData>? = null
+    private var data = ArrayList<GuidomiaData>()
 
     private var currentFilteredMake: String = ANY_MAKE
-    private var  currentFilteredModel: String = ANY_MODEL
+    private var currentFilteredModel: String = ANY_MODEL
 
     fun fetchData() {
         viewModelScope.launch {
-            var inputSource = readDataFromResource()
-            val moshi: Moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-            val listType = Types.newParameterizedType(List::class.java, GuidomiaData::class.java)
+            val inputSource = readDataFromResource()
+            val moshi: Moshi = Moshi.Builder()
+                .add(KotlinJsonAdapterFactory())
+                .add(MoshiArrayListCustomAdapter())
+                .build()
+            val listType =
+                Types.newParameterizedType(ArrayList::class.java, GuidomiaData::class.java)
             val adapter: JsonAdapter<List<GuidomiaData>> = moshi.adapter(listType)
 
-            data = adapter.fromJson(inputSource)
+            val inputData = adapter.fromJson(inputSource)
+            inputData?.let { data.addAll(it) }
             buildFilterData()
             buildDataForList(data, 0)
 
@@ -46,14 +51,14 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
     }
 
     private fun buildFilterData() {
-        var makeFilter = ArrayList<String>().apply {
+        val makeFilter = ArrayList<String>().apply {
             add(ANY_MAKE)
         }
-        var modelFilter = ArrayList<String>().apply {
+        val modelFilter = ArrayList<String>().apply {
             add(ANY_MODEL)
         }
 
-        data?.forEach { guidomiaData ->
+        data.forEach { guidomiaData ->
             guidomiaData.make?.let { it -> makeFilter.add(it) }
             guidomiaData.model?.let { it -> modelFilter.add(it) }
         }
@@ -61,36 +66,34 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
         modelFilterLiveData.postValue(modelFilter)
     }
 
-    fun filterOnMake(make: String) {
-        val subData = ArrayList<GuidomiaData>()
-        if (ANY_MAKE == make) {
-            buildDataForList(data, 0)
-        } else {
-            data?.forEach {
-                if (make == it.make) {
-                    subData.add(it)
-                }
-            }
-            buildDataForList(subData, 0)
-        }
-    }
-
-    fun filterOnModel(model: String) {
-        val subData = ArrayList<GuidomiaData>()
-        if (ANY_MODEL == model) {
-            buildDataForList(data, 0)
-        } else {
-            data?.forEach {
+    fun filter(make: String, model: String) {
+        var subData = ArrayList<GuidomiaData>()
+        if (make == ANY_MAKE && model == ANY_MODEL) {
+            subData = data.clone() as ArrayList<GuidomiaData>
+        } else if (make == ANY_MAKE) {
+            data.forEach {
                 if (model == it.model) {
                     subData.add(it)
                 }
             }
-            buildDataForList(subData, 0)
+        } else if (model == ANY_MODEL) {
+            data.forEach {
+                if (make == it.make) {
+                    subData.add(it)
+                }
+            }
+        } else {
+            data.forEach {
+                if (it.make == make && it.model == model) {
+                    subData.add(it)
+                }
+            }
         }
+        buildDataForList(subData, 0)
     }
 
     private fun buildDataForList(inputData: List<GuidomiaData>?, indexExpanded: Int) {
-        var listData = ArrayList<IRecycleELement>()
+        val listData = ArrayList<IRecycleELement>()
         inputData?.forEachIndexed { index, carData ->
             listData.add(
                 CarInfo(
@@ -98,11 +101,11 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
                     guidomiaCarInfo = carData,
                     isExpanded = index == indexExpanded,
                     clickListener = {
-                        buildDataForList(data, index)
+                        buildDataForList(inputData, index)
                     }
                 )
             )
-            if(index < inputData.lastIndex) {
+            if (index < inputData.lastIndex) {
                 listData.add(
                     Divider(
                         isDivider = true
@@ -123,7 +126,7 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
         }
     }
 
-    fun readDataFromResource(): String {
+    private fun readDataFromResource(): String {
         return getApplication<Application>().resources.openRawResource(R.raw.car_list)
             .bufferedReader().use { it.readText() }
     }

@@ -52,7 +52,9 @@ class MainActivity : AppCompatActivity() {
         binding.makeSpinner.adapter = makeSpinnerAdapter
         binding.makeSpinner.onItemSelectedListener = object: OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, position: Int, id: Long) {
-                makeSpinnerAdapter.getItem(position)?.let { viewmodel.filterOnMake(it) }
+                makeSpinnerAdapter.getItem(position)?.let {
+                    viewmodel.filter(make = it, model = binding.modelSpinner.selectedItem.toString())
+                }
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -64,7 +66,9 @@ class MainActivity : AppCompatActivity() {
         binding.modelSpinner.adapter = modelSpinnerAdapter
         binding.modelSpinner.onItemSelectedListener = object: OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, position: Int, id: Long) {
-                modelSpinnerAdapter.getItem(position)?.let { viewmodel.filterOnModel(it) }
+                modelSpinnerAdapter.getItem(position)?.let {
+                    viewmodel.filter(make = binding.makeSpinner.selectedItem.toString(), model = it)
+                }
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
