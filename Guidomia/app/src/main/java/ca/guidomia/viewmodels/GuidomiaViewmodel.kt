@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import ca.guidomia.R
 import ca.guidomia.adapters.*
+import ca.guidomia.utils.GuidomiaSharePreferenceManager
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
@@ -127,7 +128,13 @@ class GuidomiaViewmodel(application: Application) : AndroidViewModel(application
     }
 
     private fun readDataFromResource(): String {
-        return getApplication<Application>().resources.openRawResource(R.raw.car_list)
-            .bufferedReader().use { it.readText() }
+        val pref = GuidomiaSharePreferenceManager(getApplication<Application>().baseContext)
+        var guidomiaJsonData = pref.fetchPersistedGuidomiaData()
+        if (guidomiaJsonData.isNullOrBlank()) {
+            guidomiaJsonData = getApplication<Application>().resources.openRawResource(R.raw.car_list)
+                .bufferedReader().use { it.readText() }
+            pref.persistGuidomiaDataList(guidomiaJsonData)
+        }
+        return guidomiaJsonData
     }
 }
