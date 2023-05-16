@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Video Player</string>
+
+    <string name="base_url">http://10.0.2.2:4000</string>
+</resources>
