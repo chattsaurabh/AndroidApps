@@ -29,10 +29,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 def koin_version= '3.3.3'
 def exo_player_version= '2.18.7'
+def mediaVersion = "1.0.1"
 dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -57,9 +61,9 @@ dependencies {
     //end
 
     //exo player
-    implementation "com.google.android.exoplayer:exoplayer:$exo_player_version"
-    implementation "com.google.android.exoplayer:exoplayer-core:$exo_player_version"
-    implementation "com.google.android.exoplayer:exoplayer-dash:$exo_player_version"
-    implementation "com.google.android.exoplayer:exoplayer-ui:$exo_player_version"
+    implementation "androidx.media3:media3-exoplayer:$mediaVersion"
+    implementation "androidx.media3:media3-ui:$mediaVersion"
+    implementation "androidx.media3:media3-exoplayer-dash:$mediaVersion"
+
     //end
 }
