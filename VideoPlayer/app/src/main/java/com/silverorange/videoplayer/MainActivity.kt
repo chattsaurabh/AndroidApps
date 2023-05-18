@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     private fun registerObservers() {
         viewmodel.videosLiveData.observe(this, Observer {
             var msg = ""
-            when(it) {
+            when (it) {
                 is Success -> {
                     msg = "Success:: Data = ${it.payload?.get(0)?.title}"
                     initVideoPlayer()
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initVideoPlayer() {
-        if(viewmodel.videoList.isEmpty()) {
+        if (viewmodel.videoList.isEmpty()) {
             return
         }
 
@@ -65,12 +65,25 @@ class MainActivity : AppCompatActivity() {
             .build()
             .also { exoPlayer ->
                 binding.video.player = exoPlayer
-                val mediaItem = viewmodel.videoList[mediaItemIndex].fullURL?.let { MediaItem.fromUri(it) }
-                mediaItem?.let {
-                    exoPlayer.setMediaItem(it)
-                    exoPlayer.playWhenReady = playWhenReady
-                    exoPlayer.prepare()
+                binding.video.apply {
+                    setShowFastForwardButton(false)
+                    setShowRewindButton(false)
                 }
+
+
+                val mediaItems = ArrayList<MediaItem>()
+                viewmodel.videoList.forEach { videoItem ->
+                    videoItem.fullURL?.let { MediaItem.fromUri(it) }?.let {
+                        mediaItems.add(
+                            it
+                        )
+                    }
+                }
+
+                exoPlayer.setMediaItems(mediaItems, mediaItemIndex, playbackPosition)
+                exoPlayer.playWhenReady = playWhenReady
+                exoPlayer.prepare()
+
             }
     }
 
@@ -94,7 +107,8 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         WindowInsetsControllerCompat(window, binding.video).let { controller ->
             controller.hide(WindowInsetsCompat.Type.systemBars())
-            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            controller.systemBarsBehavior =
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
     }
 
