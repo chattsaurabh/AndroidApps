@@ -22,11 +22,15 @@ class VideoPlayerViewmodel(application: Application) : AndroidViewModel(applicat
     var videosLiveData = MutableLiveData<Resource<List<Videos>, String>>()
         private set
 
+    var videoList = emptyList<Videos>()
     fun fetchVideos() {
         val apiInterface = apiClient.getClient()?.create(ApiInterface::class.java)
         val call : Call<List<Videos>>? = apiInterface?.getVideos()
         call?.enqueue(object : VideoPlayerCallback<List<Videos>>() {
             override fun onSuccess(call: Call<List<Videos>>?, response: Response<List<Videos>>?) {
+                response?.body()?.let {
+                    videoList = it
+                }
                 videosLiveData.postValue(Success(response?.body()))
             }
 

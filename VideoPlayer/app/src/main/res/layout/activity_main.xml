@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <VideoView
+    <com.google.android.exoplayer2.video.VideoDecoderGLSurfaceView
         android:id="@+id/video"
         android:layout_width="match_parent"
         android:layout_height="380dp"
