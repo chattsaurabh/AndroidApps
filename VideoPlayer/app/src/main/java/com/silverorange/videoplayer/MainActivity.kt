@@ -10,8 +10,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.Observer
 import androidx.media3.common.MediaItem
+import androidx.media3.common.MediaMetadata
+import androidx.media3.common.Player.Listener
 import androidx.media3.common.util.Util
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.ui.PlayerView.SHOW_BUFFERING_NEVER
 import com.silverorange.videoplayer.databinding.ActivityMainBinding
 import com.silverorange.videoplayer.utils.Failure
 import com.silverorange.videoplayer.utils.Loading
@@ -69,22 +72,50 @@ class MainActivity : AppCompatActivity() {
                     setShowFastForwardButton(false)
                     setShowRewindButton(false)
                 }
+                exoPlayer.addListener(object : Listener {
+                    override fun onMediaItemTransition(mediaItem: MediaItem?, reason: Int) {
+                        updateMediaMetaControls(mediaItem)
+                        super.onMediaItemTransition(mediaItem, reason)
+                    }
+                })
 
 
                 val mediaItems = ArrayList<MediaItem>()
                 viewmodel.videoList.forEach { videoItem ->
-                    videoItem.fullURL?.let { MediaItem.fromUri(it) }?.let {
-                        mediaItems.add(
-                            it
+                    val builder = MediaItem.Builder()
+                    builder.apply {
+                        setUri(videoItem.fullURL)
+                        setMediaMetadata(
+                            MediaMetadata.Builder()
+                                .setAlbumArtist(videoItem.author?.name)
+                                .setAlbumTitle(videoItem.title)
+                                .setDescription(videoItem.description)
+                                .build()
                         )
                     }
+                    mediaItems.add(builder.build())
                 }
 
                 exoPlayer.setMediaItems(mediaItems, mediaItemIndex, playbackPosition)
                 exoPlayer.playWhenReady = playWhenReady
+//                binding.videoDescription.text = viewmodel.videoList[mediaItemIndex].description
                 exoPlayer.prepare()
 
             }
+    }
+
+    private fun updateMediaMetaControls(mediaItem: MediaItem?) {
+        binding.videoDescription.text = StringBuilder()
+            .append(mediaItem?.mediaMetadata?.albumTitle)
+            .append("\n")
+            .append(mediaItem?.mediaMetadata?.albumArtist)
+            .append("\n\n")
+            .append(mediaItem?.mediaMetadata?.description)
+            .append("\n\n\n\n")
+            .toString()
+
+//        binding.video.setShowPreviousButton(mediaItemIndex > 0)
+//        binding.video.setShowNextButton(mediaItemIndex < viewmodel.videoList.size)
     }
 
     public override fun onStart() {
