@@ -14,7 +14,6 @@ import androidx.media3.common.MediaMetadata
 import androidx.media3.common.Player.Listener
 import androidx.media3.common.util.Util
 import androidx.media3.exoplayer.ExoPlayer
-import androidx.media3.ui.PlayerView.SHOW_BUFFERING_NEVER
 import com.silverorange.videoplayer.databinding.ActivityMainBinding
 import com.silverorange.videoplayer.utils.Failure
 import com.silverorange.videoplayer.utils.Loading
